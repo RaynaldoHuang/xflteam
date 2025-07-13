@@ -2,7 +2,7 @@ export const matches = [
     {
         homeTeamId: "macallan",
         awayTeamId: "hennessy",
-        score: "1 : 1",
+        score: "0",
         week: 1,
         type: "cup",
         date: "2025-07-21",
@@ -20,7 +20,7 @@ export const matches = [
         score: "2 : 1",
         week: 1,
         type: "cup",
-        date: "2025-07-20",
+        date: "2025-07-19",
         time: "18:00",
         venue: "Lapangan B",
         events: [

@@ -3,6 +3,7 @@
 import Image from "next/image"
 
 import logo from "@/public/svg/logo.svg"
+import logocipta from "@/public/svg/cipta.svg"
 
 export default function TopBar() {
     return (
@@ -11,8 +12,17 @@ export default function TopBar() {
                 <div className="border-b border-gray-300">
                     <div className="mx-4 my-4 flex justify-between items-center">
                         <div>
-                            <h1 className="font-[family-name:var(--space-grotesk)] text-red-900">Welcome to</h1>
-                            <h1 className="font-[family-name:var(--space-grotesk)] font-bold text-xl text-red-900">XFL123 Club</h1>
+                            <h1 className="font-[family-name:var(--space-grotesk)] font-bold text-xl text-red-900 mb-0.5">XFL123 Club</h1>
+                            <div>
+                                <div className="flex items-center">
+                                    <h1 className="text-[8px]">Powered by</h1>
+                                    <Image
+                                        src={logocipta}
+                                        alt=""
+                                        className="w-14 ms-1 mt-0.5"
+                                    />
+                                </div>
+                            </div>
                         </div>
                         <div>
                             <Image
