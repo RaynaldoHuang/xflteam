@@ -19,7 +19,7 @@ export default function TopBar() {
                                     <Image
                                         src={logocipta}
                                         alt=""
-                                        className="w-14 ms-1 mt-0.5"
+                                        className="w-14 ms-0.5 mt-0.5"
                                     />
                                 </div>
                             </div>
