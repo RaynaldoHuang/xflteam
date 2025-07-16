@@ -7,6 +7,7 @@ export async function generatePlayerStats() {
         ...player,
         goals: 0,
         yellowCards: 0,
+        assists: 0,
         redCards: 0,
     }))
 
@@ -18,6 +19,7 @@ export async function generatePlayerStats() {
             if (!player) continue
 
             if (event.type === "goal") player.goals++
+            if (event.type === "assist") player.assists++ 
             if (event.type === "yellow") player.yellowCards++
             if (event.type === "red") player.redCards++
         }

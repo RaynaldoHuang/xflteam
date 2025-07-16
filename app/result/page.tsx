@@ -36,8 +36,16 @@ export default function MatchResults() {
 
     if (loading) {
         return (
-            <div className="max-w-[430px] mx-auto px-4 pt-20 pb-10 text-center text-sm text-gray-500">
+            <div className="max-w-[430px] mx-auto px-4 flex items-center h-[95vh] justify-center text-center text-base text-gray-500">
                 Loading data...
+            </div>
+        )
+    }
+
+    if (sortedDates.length === 0) {
+        return (
+            <div className="max-w-[430px] mx-auto px-4 flex items-center justify-center h-[95vh] text-center text-base text-gray-500">
+                Belum ada hasil pertandingan.
             </div>
         )
     }

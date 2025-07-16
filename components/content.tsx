@@ -14,9 +14,6 @@ import RankingTable from "./RankingTable"
 export default async function HomeContent() {
     const stats = await generatePlayerStats()
 
-    const topScorers = [...stats].sort((a, b) => b.goals - a.goals).slice(0, 5)
-    const topCards = [...stats].sort((a, b) => b.yellowCards - a.yellowCards).slice(0, 5)
-
     const finishedMatches = [...matches]
         .filter(m => m.score && m.score.includes(":") && m.date)
         .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())
@@ -41,7 +38,7 @@ export default async function HomeContent() {
                                     icon: players, label: "Players", href: "/players"
                                 },
                                 {
-                                    icon: topscores, label: "Top Score", href: "/top-scorers"
+                                    icon: topscores, label: "Top Score", href: "/topskor"
                                 },
                                 {
                                     icon: assits, label: "Assists", href: "/assists"
@@ -69,75 +66,83 @@ export default async function HomeContent() {
                     <div className="mx-4">
                         <div className="flex justify-between mt-6 items-center">
                             <h1 className="font-[family-name:var(--space-grotesk)] font-bold text-lg">Hasil Pertandingan</h1>
-                            <Link href={""} className="font-[family-name:var(--space-grotesk)] font-medium text-sm text-gray-500">
+                            <Link href={"/result"} className="font-[family-name:var(--space-grotesk)] font-medium text-sm text-gray-500">
                                 Lihat semua
                             </Link>
                         </div>
 
-                        <div className="mt-3 space-y-2 mb-4">
-                            {finishedMatches.map((match, i) => {
-                                const home = getTeamById(match.homeTeamId)
-                                const away = getTeamById(match.awayTeamId)
+                        {finishedMatches.length > 0 ? (
+                            <div className="mt-3 space-y-2 mb-4">
+                                {finishedMatches.map((match, i) => {
+                                    const home = getTeamById(match.homeTeamId)
+                                    const away = getTeamById(match.awayTeamId)
 
-                                return (
-                                    <div key={i} className="bg-gray-50 rounded-lg text-red-950 px-4 py-3 shadow">
-                                        <div className="flex justify-between items-center mb-5">
-                                            <div>
-                                                <h1 className="font-semibold capitalize">{match.type}</h1>
-                                                <p className="text-sm">
-                                                    {match.date &&
-                                                        new Date(match.date).toLocaleDateString("id-ID", {
-                                                            weekday: "long",
-                                                            day: "2-digit",
-                                                            month: "long",
-                                                            year: "numeric",
-                                                        })}
-                                                </p>
+                                    return (
+                                        <div key={i} className="bg-gray-50 rounded-lg text-red-950 px-4 py-3 shadow">
+                                            <div className="flex justify-between items-center mb-5">
+                                                <div>
+                                                    <h1 className="font-semibold capitalize">{match.type}</h1>
+                                                    <p className="text-sm">
+                                                        {match.date &&
+                                                            new Date(match.date).toLocaleDateString("id-ID", {
+                                                                weekday: "long",
+                                                                day: "2-digit",
+                                                                month: "long",
+                                                                year: "numeric",
+                                                            })}
+                                                    </p>
+                                                </div>
+                                                <p className="text-base font-bold">Week {match.week}</p>
                                             </div>
-                                            <p className="text-base font-bold">Week {match.week}</p>
+
+                                            <div className="grid grid-cols-3 items-center text-center">
+                                                {/* Home Team */}
+                                                <div className="flex flex-col items-center gap-2 min-w-0">
+                                                    <Image src={home?.logo || ""} alt={home?.name || ""} width={65} height={65} className="object-contain" />
+                                                    <div className="truncate text-sm font-semibold">{home?.name}</div>
+                                                </div>
+
+                                                {/* Score */}
+                                                <div>
+                                                    <div className="text-3xl font-bold">{match.score}</div>
+                                                    <div className="bg-red-900 text-white text-xs mx-3 py-0.5 rounded-full mt-2">Full time</div>
+                                                </div>
+
+                                                {/* Away Team */}
+                                                <div className="flex flex-col items-center gap-2 min-w-0 justify-end text-right">
+                                                    <Image src={away?.logo || ""} alt={away?.name || ""} width={65} height={65} className="object-contain" />
+                                                    <div className="truncate text-sm font-semibold">{away?.name}</div>
+                                                </div>
+                                            </div>
+
+                                            {/* Events */}
+                                            <div className="flex justify-between mt-5">
+                                                <div className="text-xs text-red-950 mt-1 space-y-0.5">
+                                                    {match.events
+                                                        ?.filter((e) => e.team === "home" && (e.type === "goal" || e.type === "yellow"))
+                                                        .map((e, idx) => (
+                                                            <div key={idx} className="flex items-center">
+                                                                {e.type === "goal" ? "⚽" : "🟨"} <p className="ms-1 me-1">{e.player}</p>{e.minute}’
+                                                            </div>
+                                                        ))}
+                                                </div>
+                                                <div className="text-xs text-red-950 mt-1 space-y-0.5">
+                                                    {match.events?.filter((e) => e.team === "away").map((e, idx) => (
+                                                        <div key={idx} className="flex items-center">
+                                                            {e.type === "goal" ? "⚽" : "🟨"} <p className="ms-1 me-1">{e.player}</p>{e.minute}’
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         </div>
-
-                                        <div className="grid grid-cols-3 items-center text-center">
-                                            {/* Home Team */}
-                                            <div className="flex flex-col items-center gap-2 min-w-0">
-                                                <Image src={home?.logo || ""} alt={home?.name || ""} width={65} height={65} className="object-contain" />
-                                                <div className="truncate text-sm font-semibold">{home?.name}</div>
-                                            </div>
-
-                                            {/* Score */}
-                                            <div>
-                                                <div className="text-3xl font-bold">{match.score}</div>
-                                                <div className="bg-red-900 text-white text-xs mx-3 py-0.5 rounded-full mt-2">Full time</div>
-                                            </div>
-
-                                            {/* Away Team */}
-                                            <div className="flex flex-col items-center gap-2 min-w-0 justify-end text-right">
-                                                <Image src={away?.logo || ""} alt={away?.name || ""} width={65} height={65} className="object-contain" />
-                                                <div className="truncate text-sm font-semibold">{away?.name}</div>
-                                            </div>
-                                        </div>
-
-                                        {/* Events */}
-                                        {/* <div className="flex justify-between mt-5">
-                                            <div className="text-xs text-red-950 mt-1 space-y-0.5">
-                                                {match.events?.filter((e) => e.team === "home").map((e, idx) => (
-                                                    <div key={idx} className="flex items-center">
-                                                        {e.type === "goal" ? "⚽" : "🟨"} <p className="ms-1 me-1">{e.player}</p>{e.minute}’
-                                                    </div>
-                                                ))}
-                                            </div>
-                                            <div className="text-xs text-red-950 mt-1 space-y-0.5">
-                                                {match.events?.filter((e) => e.team === "away").map((e, idx) => (
-                                                    <div key={idx} className="flex items-center">
-                                                        {e.type === "goal" ? "⚽" : "🟨"} <p className="ms-1 me-1">{e.player}</p>{e.minute}’
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div> */}
-                                    </div>
-                                )
-                            })}
-                        </div>
+                                    )
+                                })}
+                            </div>
+                        ) :
+                            <div className="h-[12vh] flex items-center justify-center text-center text-sm text-gray-500 mt-4 mb-6">
+                                Belum ada hasil pertandingan.
+                            </div>
+                        }
                     </div>
                 </div>
 
@@ -146,7 +151,7 @@ export default async function HomeContent() {
                     <div className="mx-4">
                         <div className="flex justify-between mt-8 mb-3 items-center">
                             <h1 className="font-[family-name:var(--space-grotesk)] font-bold text-lg">Klasemen League</h1>
-                            <Link href={""} className="font-[family-name:var(--space-grotesk)] font-medium text-sm text-gray-500">
+                            <Link href={"/ranking"} className="font-[family-name:var(--space-grotesk)] font-medium text-sm text-gray-500">
                                 Lihat semua
                             </Link>
                         </div>
@@ -177,39 +182,6 @@ export default async function HomeContent() {
                         </div>
                     </div>
                 </div>
-
-                {/* Top Skor & Kartu Kuning */}
-                {/* <div className="mt-6 space-y-4">
-                    <div>
-                        <h2 className="font-bold text-lg">Top Skor</h2>
-                        <ul className="mt-2 space-y-1 text-sm">
-                            {topScorers.map((player, i) => {
-                                const team = getTeamById(player.teamId)
-                                return (
-                                    <li key={i} className="flex justify-between">
-                                        <span>{player.name} ({team?.name})</span>
-                                        <span>{player.goals} ⚽</span>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 className="font-bold text-lg">Kartu Kuning Terbanyak</h2>
-                        <ul className="mt-2 space-y-1 text-sm">
-                            {topCards.map((player, i) => {
-                                const team = getTeamById(player.teamId)
-                                return (
-                                    <li key={i} className="flex justify-between">
-                                        <span>{player.name} ({team?.name})</span>
-                                        <span>{player.yellowCards} 🟨</span>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
-                </div> */}
             </div>
         </>
     )

@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { players } from "@/lib/players"
 import { teams } from "@/lib/teams"
 import Image from "next/image"
@@ -5,14 +8,42 @@ import Link from "next/link"
 
 import profiledefault from "@/public/img/profiledefault.jpg"
 
-const teamMap = Object.fromEntries(teams.map(t => [t.id, t]))
-
 export default function PlayersPage() {
-    const groupedPlayers: Record<string, typeof players> = {}
+    const [loading, setLoading] = useState(true)
+    const [groupedPlayers, setGroupedPlayers] = useState<Record<string, typeof players>>({})
+    const [teamMap, setTeamMap] = useState<Record<string, (typeof teams)[0]>>({})
 
-    for (const player of players) {
-        if (!groupedPlayers[player.teamId]) groupedPlayers[player.teamId] = []
-        groupedPlayers[player.teamId].push(player)
+    useEffect(() => {
+        // Simulasi loading (bisa dihapus jika pakai data async asli)
+        setTimeout(() => {
+            const grouped: Record<string, typeof players> = {}
+            for (const player of players) {
+                if (!grouped[player.teamId]) grouped[player.teamId] = []
+                grouped[player.teamId].push(player)
+            }
+
+            const teamObj = Object.fromEntries(teams.map(t => [t.id, t]))
+
+            setGroupedPlayers(grouped)
+            setTeamMap(teamObj)
+            setLoading(false)
+        }, 500)
+    }, [])
+
+    if (loading) {
+        return (
+            <div className="max-w-[430px] mx-auto px-4 pt-28 text-center text-gray-500 text-base h-[80vh] flex justify-center items-center">
+                Memuat data pemain...
+            </div>
+        )
+    }
+
+    if (Object.keys(groupedPlayers).length === 0) {
+        return (
+            <div className="max-w-[430px] mx-auto px-4 pt-28 text-center text-gray-500 text-base h-[80vh] flex justify-center items-center">
+                Belum ada data pemain.
+            </div>
+        )
     }
 
     return (

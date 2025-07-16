@@ -18,7 +18,7 @@ export default function RankingTable() {
 
     if (loading) {
         return (
-            <div className="w-full max-w-[430px] mx-auto px-4 py-4 text-sm text-gray-500 text-center">
+            <div className="max-w-[430px] mx-auto px-4 flex items-center h-[95vh] justify-center text-center text-base text-gray-500">
                 Loading data...
             </div>
         )

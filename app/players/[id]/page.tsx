@@ -21,7 +21,14 @@ export default function PlayerDetailPage() {
         load()
     }, [params.id])
 
-    if (!player) return <div>Loading...</div>
+   
+    if (!player) {
+        return (
+           <div className="max-w-[430px] mx-auto px-4 flex items-center h-[95vh] justify-center text-center text-base text-gray-500">
+                Loading data...
+            </div>
+        )
+    }
 
     const team = getTeamById(player.teamId)
 

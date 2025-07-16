@@ -17,7 +17,7 @@ export default function CupRankingTable() {
 
     if (!groups) {
         return (
-            <div className="max-w-[430px] mx-4 pt-2 text-center text-gray-500">
+           <div className="max-w-[430px] mx-auto px-4 flex items-center h-[95vh] justify-center text-center text-base text-gray-500">
                 Loading data...
             </div>
         )

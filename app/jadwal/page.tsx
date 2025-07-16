@@ -4,6 +4,9 @@ import { useEffect, useState } from "react"
 import { matches } from "@/lib/matchday"
 import { teams } from "@/lib/teams"
 import dayjs from "dayjs"
+import "dayjs/locale/id"
+
+dayjs.locale("id")
 
 const teamMap = Object.fromEntries(teams.map(t => [t.id, t]))
 
@@ -35,8 +38,16 @@ export default function MatchSchedule() {
 
     if (loading) {
         return (
-            <div className="max-w-[430px] mx-4 pt-26 text-center text-gray-500">
+            <div className="max-w-[430px] mx-auto px-4 flex items-center h-[95vh] justify-center text-center text-base text-gray-500">
                 Loading data...
+            </div>
+        )
+    }
+
+    if (!sortedDates.length) {
+        return (
+            <div className="max-w-[430px] mx-auto px-4 flex items-center h-[95vh] justify-center text-center text-base text-gray-500">
+                Belum ada pertandingan.
             </div>
         )
     }
