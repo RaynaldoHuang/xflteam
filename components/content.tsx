@@ -5,14 +5,14 @@ import { generatePlayerStats } from "@/lib/generatePlayerStats"
 import { getTeamById } from "@/lib/getTeamById"
 
 import players from "@/public/svg/players.svg"
-import team from "@/public/svg/team.svg"
+import team from "@/public/svg/club.svg"
 import topscores from "@/public/svg/topscores.svg"
-import winrate from "@/public/svg/winrate.svg"
+import assits from "@/public/svg/assits.svg"
 
 import RankingTable from "./RankingTable"
 
-export default function HomeContent() {
-    const stats = generatePlayerStats()
+export default async function HomeContent() {
+    const stats = await generatePlayerStats()
 
     const topScorers = [...stats].sort((a, b) => b.goals - a.goals).slice(0, 5)
     const topCards = [...stats].sort((a, b) => b.yellowCards - a.yellowCards).slice(0, 5)
@@ -24,23 +24,41 @@ export default function HomeContent() {
 
     return (
         <>
-            <div className="mt-26 pb-26">
+            <div className="mt-24 pb-24">
                 {/* MENU */}
                 <div className="w-full max-w-[430px] mx-auto">
                     <div className="mx-4">
                         <div className="flex justify-between mt-4 mb-3 items-center">
                             <h1 className="font-[family-name:var(--space-grotesk)] font-bold text-lg">Menu</h1>
                         </div>
+
                         <div className="grid grid-cols-4 gap-4">
-                            {[{ icon: team, label: "Teams" }, { icon: players, label: "Players" }, { icon: topscores, label: "Top Score" }, { icon: winrate, label: "Win Rate" }].map((item, idx) => (
-                                <button key={idx}>
+                            {[
+                                {
+                                    icon: team, label: "Teams", href: "/teams"
+                                },
+                                {
+                                    icon: players, label: "Players", href: "/players"
+                                },
+                                {
+                                    icon: topscores, label: "Top Score", href: "/top-scorers"
+                                },
+                                {
+                                    icon: assits, label: "Assists", href: "/assists"
+                                }
+                            ].map((item, idx) => (
+                                <Link key={idx} href={item.href}>
                                     <div className="flex flex-col justify-center items-center">
                                         <div className="bg-red-950 px-3 py-3 rounded-lg">
-                                            <Image src={item.icon} alt="" />
+                                            <Image
+                                                src={item.icon}
+                                                alt=""
+                                                className="text-white w-12 h-12"
+                                            />
                                         </div>
                                         <h1 className="mt-2 font-[family-name:var(--space-grotesk)] font-semibold">{item.label}</h1>
                                     </div>
-                                </button>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -62,7 +80,7 @@ export default function HomeContent() {
                                 const away = getTeamById(match.awayTeamId)
 
                                 return (
-                                    <div key={i} className="bg-gray-50 rounded-lg text-red-950 px-4 py-3 shadow-md">
+                                    <div key={i} className="bg-gray-50 rounded-lg text-red-950 px-4 py-3 shadow">
                                         <div className="flex justify-between items-center mb-5">
                                             <div>
                                                 <h1 className="font-semibold capitalize">{match.type}</h1>
@@ -100,7 +118,7 @@ export default function HomeContent() {
                                         </div>
 
                                         {/* Events */}
-                                        <div className="flex justify-between mt-5">
+                                        {/* <div className="flex justify-between mt-5">
                                             <div className="text-xs text-red-950 mt-1 space-y-0.5">
                                                 {match.events?.filter((e) => e.team === "home").map((e, idx) => (
                                                     <div key={idx} className="flex items-center">
@@ -115,7 +133,7 @@ export default function HomeContent() {
                                                     </div>
                                                 ))}
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 )
                             })}
@@ -161,7 +179,7 @@ export default function HomeContent() {
                 </div>
 
                 {/* Top Skor & Kartu Kuning */}
-                <div className="mt-6 space-y-4">
+                {/* <div className="mt-6 space-y-4">
                     <div>
                         <h2 className="font-bold text-lg">Top Skor</h2>
                         <ul className="mt-2 space-y-1 text-sm">
@@ -191,7 +209,7 @@ export default function HomeContent() {
                             })}
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

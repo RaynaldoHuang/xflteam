@@ -1,30 +1,35 @@
+type MatchEvent = {
+  type: "goal" | "yellow" | "red"
+  team: "home" | "away"
+  player: string
+  minute: number
+}
+
 export const matches = [
     {
         homeTeamId: "macallan",
         awayTeamId: "hennessy",
         score: "0",
         week: 1,
-        type: "cup",
+        type: "league",
         date: "2025-07-21",
         time: "15:30",
         venue: "Lapangan B",
         events: [
-            { type: "goal", team: "home", player: "Bruno", minute: 23 },
-            { type: "goal", team: "home", player: "Rashford", minute: 45 },
-            { type: "yellow", team: "away", player: "Marc G", minute: 62 },
-        ],
+            // { type: "goal", team: "home", player: "Bruno", minute: 23 },
+        ] as MatchEvent[],
     },
     {
         homeTeamId: "singleton",
         awayTeamId: "blacklabel",
-        score: "2 : 1",
+        score: "1 : 1",
         week: 1,
-        type: "cup",
+        type: "league",
         date: "2025-07-19",
         time: "18:00",
         venue: "Lapangan B",
         events: [
-            { type: "yellow", team: "away", player: "Marc G", minute: 62 },
+            // { type: "yellow", team: "away", player: "Marc G", minute: 62 },
         ],
     },
     {
@@ -37,7 +42,7 @@ export const matches = [
         time: "18:00",
         venue: "Lapangan B",
         events: [
-            { type: "yellow", team: "away", player: "Marc G", minute: 62 },
+         // { type: "yellow", team: "away", player: "Marc G", minute: 62 },
         ],
     },
     {
@@ -50,7 +55,7 @@ export const matches = [
         time: "18:00",
         venue: "Lapangan B",
         events: [
-            { type: "yellow", team: "away", player: "Marc G", minute: 62 },
+            // { type: "yellow", team: "away", player: "Marc G", minute: 62 },
         ],
     },
 ]

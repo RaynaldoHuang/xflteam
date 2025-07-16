@@ -1,7 +1,28 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { generateStandings } from "@/lib/standings"
 
 export default function RankingTable() {
-    const standings = generateStandings()
+    const [loading, setLoading] = useState(true)
+    const [standings, setStandings] = useState<any[]>([])
+
+    useEffect(() => {
+        const load = () => {
+            const result = generateStandings()
+            setStandings(result)
+            setLoading(false)
+        }
+        load()
+    }, [])
+
+    if (loading) {
+        return (
+            <div className="w-full max-w-[430px] mx-auto px-4 py-4 text-sm text-gray-500 text-center">
+                Loading data...
+            </div>
+        )
+    }
 
     return (
         <div className="w-full max-w-[430px] mx-auto">

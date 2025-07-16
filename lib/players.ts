@@ -3,16 +3,22 @@ export const players = [
   {
     id: "bruno",
     name: "Bruno Fernandes",
-    teamId: "manutd",
+    teamId: "macallan",
+    position: "MF",
+    photo: ""
   },
   {
     id: "rashford",
     name: "Marcus Rashford",
-    teamId: "manutd",
+    teamId: "macallan",
+    position: "MF",
+    photo: ""
   },
   {
     id: "marcg",
     name: "Marc G",
-    teamId: "mancity",
+    teamId: "hennessy",
+    position: "MF",
+    photo: ""
   },
 ]

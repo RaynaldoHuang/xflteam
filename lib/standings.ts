@@ -21,7 +21,7 @@ export function generateStandings(type: "league" | "cup" = "league", group?: "A"
 
     // ⏩ Inisialisasi semua tim lebih awal
     for (const team of teams) {
-        if (group && team.group !== group) continue
+        if (group && team.group?.toLowerCase() !== group.toLowerCase()) continue
         table[team.id] = {
             id: team.id,
             name: team.name,

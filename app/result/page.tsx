@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { matches } from "@/lib/matchday"
 import { teams } from "@/lib/teams"
 import dayjs from "dayjs"
@@ -5,21 +8,39 @@ import dayjs from "dayjs"
 const teamMap = Object.fromEntries(teams.map(t => [t.id, t]))
 
 export default function MatchResults() {
-    // Filter hanya pertandingan yang sudah selesai
-    const finishedMatches = matches.filter(m => m.score && m.score.includes(":"))
+    const [loading, setLoading] = useState(true)
+    const [sortedDates, setSortedDates] = useState<string[]>([])
+    const [matchesByDate, setMatchesByDate] = useState<Record<string, typeof matches>>({})
 
-    // Group by date string
-    const matchesByDate: Record<string, typeof matches> = {}
+    useEffect(() => {
+        const load = () => {
+            const finishedMatches = matches.filter(m => m.score && m.score.includes(":"))
+            const grouped: Record<string, typeof matches> = {}
 
-    for (const match of finishedMatches) {
-        if (!match.date) continue
-        const dateKey = dayjs(match.date).format("YYYY-MM-DD")
-        if (!matchesByDate[dateKey]) matchesByDate[dateKey] = []
-        matchesByDate[dateKey].push(match)
+            for (const match of finishedMatches) {
+                if (!match.date) continue
+                const dateKey = dayjs(match.date).format("YYYY-MM-DD")
+                if (!grouped[dateKey]) grouped[dateKey] = []
+                grouped[dateKey].push(match)
+            }
+
+            const sorted = Object.keys(grouped).sort()
+
+            setMatchesByDate(grouped)
+            setSortedDates(sorted)
+            setLoading(false)
+        }
+
+        load()
+    }, [])
+
+    if (loading) {
+        return (
+            <div className="max-w-[430px] mx-auto px-4 pt-20 pb-10 text-center text-sm text-gray-500">
+                Loading data...
+            </div>
+        )
     }
-
-    // Urutkan tanggal
-    const sortedDates = Object.keys(matchesByDate).sort()
 
     return (
         <div className="max-w-[430px] mx-4 space-y-4 pt-26 pb-20">
@@ -49,7 +70,6 @@ export default function MatchResults() {
                                         className="bg-white rounded-lg shadow px-4 py-3 items-center"
                                     >
                                         <div className="flex justify-between items-stretch">
-                                            {/* Tim Home & Away */}
                                             <div className="space-y-2">
                                                 <div className="flex items-center">
                                                     <img src={home.logo} alt={home.name} className="w-6 h-6 object-contain me-4" />
@@ -61,17 +81,12 @@ export default function MatchResults() {
                                                 </div>
                                             </div>
 
-                                            {/* Skor & FT */}
                                             <div className="flex items-center space-x-4 ps-4">
-                                                {/* Skor */}
                                                 <div className="flex flex-col justify-center items-center text-right text-lg font-semibold">
                                                     <span>{homeScore}</span>
                                                     <span>{awayScore}</span>
                                                 </div>
-
-                                                {/* Divider */}
                                                 <div className="self-stretch w-px bg-gray-300" />
-
                                                 <div>
                                                     <span className="text-red-900 text-2xl font-bold">FT</span>
                                                 </div>
