@@ -160,6 +160,13 @@ export const players: Player[] = [
     photo: ""
   },
   {
+    id: "deni",
+    name: "Deni",
+    teamId: "singleton",
+    position: "GK",
+    photo: ""
+  },
+  {
     id: "kelvin",
     name: "Kelvin LCS",
     teamId: "singleton",
@@ -169,6 +176,13 @@ export const players: Player[] = [
   {
     id: "dimas",
     name: "Dimas",
+    teamId: "singleton",
+    position: "DEF",
+    photo: ""
+  },
+  {
+    id: "leo",
+    name: "Leo",
     teamId: "singleton",
     position: "DEF",
     photo: ""
@@ -442,7 +456,7 @@ export const players: Player[] = [
   },
   {
     id: "VJ",
-    name: "VJ",
+    name: "Victor",
     teamId: "hibiki",
     position: "MID",
     photo: ""
