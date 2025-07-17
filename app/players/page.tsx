@@ -7,6 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import profiledefault from "@/public/img/profiledefault.jpg"
+import { ChevronRight } from "lucide-react"
 
 export default function PlayersPage() {
     const [loading, setLoading] = useState(true)
@@ -85,6 +86,9 @@ export default function PlayersPage() {
                                                     {player.position}
                                                 </span>
                                             </div>
+                                        </div>
+                                        <div>
+                                            <ChevronRight className="text-gray-400"/>
                                         </div>
                                     </div>
                                 </Link>

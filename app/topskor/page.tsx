@@ -12,6 +12,16 @@ export default function TopScorersPage() {
     useEffect(() => {
         const fetchStats = async () => {
             const stats = await generatePlayerStats()
+
+            // Cek apakah ada setidaknya satu goal
+            const hasStarted = stats.some((player) => player.goals > 0)
+
+            if (!hasStarted) {
+                setTopScorers([])
+                setLoading(false)
+                return
+            }
+
             const sorted = [...stats]
                 .sort((a, b) => b.goals - a.goals)
                 .slice(0, 10)
@@ -23,6 +33,7 @@ export default function TopScorersPage() {
         fetchStats()
     }, [])
 
+
     if (loading) {
         return (
             <div className="max-w-[430px] mx-auto px-4 flex items-center h-[95vh] justify-center text-center text-base text-gray-500">
@@ -31,7 +42,7 @@ export default function TopScorersPage() {
         )
     }
 
-    if (topScorers.length === 0) {
+    if (!loading && topScorers.length === 0) {
         return (
             <div className="max-w-[430px] mx-auto px-4 flex items-center justify-center h-[95vh] text-center text-base text-gray-500">
                 Belum ada data top skor.

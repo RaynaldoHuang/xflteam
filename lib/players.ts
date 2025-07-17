@@ -16,6 +16,13 @@ export const players: Player[] = [
     photo: ""
   },
   {
+    id: "chandra",
+    name: "Chandra",
+    teamId: "macallan",
+    position: "GK",
+    photo: ""
+  },
+  {
     id: "bambang",
     name: "Bambang",
     teamId: "macallan",
@@ -95,10 +102,31 @@ export const players: Player[] = [
     photo: ""
   },
   {
+    id: "rasyid",
+    name: "Rasyid",
+    teamId: "hennessy",
+    position: "GK",
+    photo: ""
+  },
+  {
     id: "salja",
     name: "Salja",
     teamId: "hennessy",
     position: "DEF",
+    photo: ""
+  },
+  {
+    id: "awen",
+    name: "Awen",
+    teamId: "hennessy",
+    position: "DEF",
+    photo: ""
+  },
+  {
+    id: "robin",
+    name: "Robin LSQ",
+    teamId: "hennessy",
+    position: "MID",
     photo: ""
   },
   {
@@ -246,6 +274,13 @@ export const players: Player[] = [
     photo: ""
   },
   {
+    id: "erick",
+    name: "Erick",
+    teamId: "blacklabel",
+    position: "GK",
+    photo: ""
+  },
+  {
     id: "zhongyen",
     name: "Zhong Yen",
     teamId: "blacklabel",
@@ -325,10 +360,38 @@ export const players: Player[] = [
     photo: ""
   },
   {
-    id: "gil",
-    name: "Gil",
+    id: "hendrik",
+    name: "Hendrik",
     teamId: "glenfiddich",
-    position: "MID",
+    position: "GK",
+    photo: ""
+  },
+  {
+    id: "suryadi",
+    name: "Suryadi",
+    teamId: "glenfiddich",
+    position: "DEF",
+    photo: ""
+  },
+  {
+    id: "agustian",
+    name: "Agustian",
+    teamId: "glenfiddich",
+    position: "ATT",
+    photo: ""
+  },
+  {
+    id: "yanssen",
+    name: "Yanssen",
+    teamId: "glenfiddich",
+    position: "DEF",
+    photo: ""
+  },
+  {
+    id: "rudi",
+    name: "Rudi Podiman",
+    teamId: "glenfiddich",
+    position: "ATT",
     photo: ""
   },
   {
@@ -369,10 +432,17 @@ export const players: Player[] = [
 
   //Azul (jl)
   {
-    id: "jl",
-    name: "Jl",
+    id: "johanlim",
+    name: "Johan Lim",
     teamId: "azul",
     position: "MID",
+    photo: ""
+  },
+  {
+    id: "marko",
+    name: "Marko",
+    teamId: "azul",
+    position: "GK",
     photo: ""
   },
   {
@@ -452,6 +522,13 @@ export const players: Player[] = [
     name: "Davis",
     teamId: "hibiki",
     position: "ATT",
+    photo: ""
+  },
+  {
+    id: "vincent",
+    name: "Vincent",
+    teamId: "hibiki",
+    position: "GK",
     photo: ""
   },
   {
@@ -541,6 +618,13 @@ export const players: Player[] = [
     photo: ""
   },
   {
+    id: "raymond",
+    name: "Raymond",
+    teamId: "cockburn",
+    position: "GK",
+    photo: ""
+  },
+  {
     id: "bram",
     name: "Bram Gs",
     teamId: "cockburn",
@@ -552,6 +636,20 @@ export const players: Player[] = [
     name: "James",
     teamId: "cockburn",
     position: "MID",
+    photo: ""
+  },
+  {
+    id: "rabbin",
+    name: "Rabbin",
+    teamId: "cockburn",
+    position: "ATT",
+    photo: ""
+  },
+  {
+    id: "edward",
+    name: "Edward",
+    teamId: "cockburn",
+    position: "ATT",
     photo: ""
   },
   {

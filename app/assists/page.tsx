@@ -13,7 +13,20 @@ export default function TopAssists() {
     useEffect(() => {
         const load = async () => {
             const stats = await generatePlayerStats()
-            const sorted = [...stats].sort((a, b) => b.assists - a.assists).slice(0, 5)
+
+            // Cek apakah ada setidaknya satu assist
+            const hasStarted = stats.some((player) => player.assists > 0)
+
+            if (!hasStarted) {
+                setTopAssists([])
+                setLoading(false)
+                return
+            }
+
+            const sorted = [...stats]
+                .sort((a, b) => b.assists - a.assists)
+                .slice(0, 5)
+
             setTopAssists(sorted)
             setLoading(false)
         }

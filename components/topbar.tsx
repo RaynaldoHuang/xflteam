@@ -8,7 +8,7 @@ import logocipta from "@/public/svg/cipta.svg"
 export default function TopBar() {
     return (
         <>
-            <div className="fixed w-full max-w-[430px] mx-auto top-0 bg-white">
+            <div className="fixed w-full max-w-[430px] mx-auto top-0 bg-white z-50">
                 <div className="border-b border-gray-300">
                     <div className="mx-4 my-4 flex justify-between items-center">
                         <div>
