@@ -374,6 +374,13 @@ export const players: Player[] = [
     photo: ""
   },
   {
+    id: "gil",
+    name: "Gil",
+    teamId: "glenfiddich",
+    position: "MID",
+    photo: ""
+  },
+  {
     id: "agustian",
     name: "Agustian",
     teamId: "glenfiddich",
