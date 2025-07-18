@@ -3,13 +3,13 @@ export const teams = [
         id: "macallan",
         name: "Macallan",
         logo: "/svg/macallan.svg",
-        group: "A"
+        group: "B"
     },
     {
         id: "hennessy",
         name: "Hennessy",
         logo: "/svg/henessy.svg",
-        group: "A"
+        group: "B"
     },
     {
         id: "singleton",
@@ -21,7 +21,7 @@ export const teams = [
         id: "blacklabel",
         name: "Black label",
         logo: "/svg/blacklabel.svg",
-        group: "B"
+        group: "A"
     },
     {
         id: "glenfiddich",
@@ -33,7 +33,7 @@ export const teams = [
         id: "azul",
         name: "Azul",
         logo: "/svg/azul.svg",
-        group: "B"
+        group: "A"
     },
     {
         id: "hibiki",
