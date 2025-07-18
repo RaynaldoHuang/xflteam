@@ -51,8 +51,8 @@ export default function CupRankingTable() {
                                         i < 2
                                             ? "bg-blue-500"
                                             : i < 4
-                                            ? "bg-orange-400"
-                                            : "bg-red-500"
+                                            ? "bg-red-500"
+                                            : "bg-orange-500"
                                     return (
                                         <tr key={team.id} className="border-b border-gray-200">
                                             <td className="p-0 w-1">
