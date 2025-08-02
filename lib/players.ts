@@ -99,7 +99,7 @@ export const players: Player[] = [
     name: "William",
     teamId: "hennessy",
     position: "ATT",
-    photo: ""
+    photo: "/img/william.webp"
   },
   {
     id: "rasyid",
@@ -113,21 +113,21 @@ export const players: Player[] = [
     name: "Salja",
     teamId: "hennessy",
     position: "DEF",
-    photo: ""
+    photo: "/img/salja.webp"
   },
   {
     id: "awen",
     name: "Awen",
     teamId: "hennessy",
     position: "DEF",
-    photo: ""
+    photo: "/img/awen.webp"
   },
   {
     id: "robin",
     name: "Robin LSQ",
     teamId: "hennessy",
     position: "MID",
-    photo: ""
+    photo: "/img/robin.webp"
   },
   {
     id: "wewek",
@@ -141,7 +141,7 @@ export const players: Player[] = [
     name: "Claudis",
     teamId: "hennessy",
     position: "DEF",
-    photo: ""
+    photo: "/img/claudis.webp"
   },
   {
     id: "laudek",
@@ -155,14 +155,14 @@ export const players: Player[] = [
     name: "Awai",
     teamId: "hennessy",
     position: "ATT",
-    photo: ""
+    photo: "/img/awai.webp"
   },
   {
     id: "yongsun",
     name: "Yongsun",
     teamId: "hennessy",
     position: "DEF",
-    photo: ""
+    photo: "/img/yongsun.webp"
   },
   {
     id: "ashia",
