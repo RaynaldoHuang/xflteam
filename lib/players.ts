@@ -622,28 +622,28 @@ export const players: Player[] = [
     name: "Wong",
     teamId: "cockburn",
     position: "DEF",
-    photo: ""
+    photo: "/img/wong.webp"
   },
   {
     id: "raymond",
     name: "Raymond",
     teamId: "cockburn",
     position: "GK",
-    photo: ""
+    photo: "/img/raymond.webp"
   },
   {
     id: "bram",
     name: "Bram Gs",
     teamId: "cockburn",
     position: "ATT",
-    photo: ""
+    photo: "/img/bram.webp"
   },
   {
     id: "james",
     name: "James",
     teamId: "cockburn",
     position: "MID",
-    photo: ""
+    photo: "/img/james.webp"
   },
   {
     id: "rabin",
@@ -657,7 +657,7 @@ export const players: Player[] = [
     name: "Edward",
     teamId: "cockburn",
     position: "ATT",
-    photo: ""
+    photo: "/img/edward.webp"
   },
   {
     id: "hanpheng",
@@ -692,13 +692,13 @@ export const players: Player[] = [
     name: "Kibuk",
     teamId: "cockburn",
     position: "DEF",
-    photo: ""
+    photo: "/img/kibuk.webp"
   },
   {
     id: "nino",
     name: "Nino",
     teamId: "cockburn",
     position: "ATT",
-    photo: ""
+    photo: "/img/nino.webp"
   },
 ]
