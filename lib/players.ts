@@ -529,14 +529,14 @@ export const players: Player[] = [
     name: "Davis",
     teamId: "hibiki",
     position: "ATT",
-    photo: ""
+    photo: "/img/davis.webp"
   },
   {
     id: "vincent",
     name: "Vincent",
     teamId: "hibiki",
     position: "GK",
-    photo: ""
+    photo: "/img/vincent.webp"
   },
   {
     id: "VJ",
@@ -585,7 +585,7 @@ export const players: Player[] = [
     name: "Fauzi",
     teamId: "hibiki",
     position: "MID",
-    photo: ""
+    photo: "/img/fauzi.webp"
   },
   {
     id: "delvin",
@@ -599,14 +599,14 @@ export const players: Player[] = [
     name: "Fico",
     teamId: "hibiki",
     position: "ATT",
-    photo: ""
+    photo: "/img/fico.webp"
   },
   {
     id: "ayang",
     name: "Ayang JB",
     teamId: "hibiki",
     position: "ATT",
-    photo: ""
+    photo: "/img/ayang.webp"
   },
   {
     id: "manhoi",
