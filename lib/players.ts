@@ -636,7 +636,7 @@ export const players: Player[] = [
     name: "Raymond",
     teamId: "cockburn",
     position: "GK",
-    photo: "/img/raymond.webp"
+    photo: ""
   },
   {
     id: "bram",
