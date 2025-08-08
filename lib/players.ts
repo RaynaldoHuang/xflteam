@@ -92,6 +92,13 @@ export const players: Player[] = [
     position: "DEF",
     photo: ""
   },
+  {
+    id: "chandri",
+    name: "Chandri",
+    teamId: "macallan",
+    position: "ATT",
+    photo: ""
+  },
 
   //Hennessy (william)
   {
