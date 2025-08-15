@@ -176,7 +176,7 @@ export const matches: {
         {
             homeTeamId: "glenfiddich",
             awayTeamId: "azul",
-            score: "1 : 3",
+            score: "1 : 2",
             week: 1,
             type: "cup",
             date: "2025-08-14",
