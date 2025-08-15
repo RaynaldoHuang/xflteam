@@ -17,15 +17,19 @@ export async function generatePlayerStats() {
         for (const event of match.events || []) {
             const player = playerMap[event.player]
             if (player) {
-                if (event.type === "goal") player.goals++
+                // ✅ Goal & Assist hanya dihitung di match league
+                if (match.type === "league" && event.type === "goal") {
+                    player.goals++
+                }
+
+                if (match.type === "league" && "assist" in event && event.assist) {
+                    const assister = playerMap[event.assist]
+                    if (assister) assister.assists++
+                }
+
+                // ✅ Kartu dihitung untuk semua tipe match
                 if (event.type === "yellow") player.yellowCards++
                 if (event.type === "red") player.redCards++
-            }
-
-            // ⬇️ Tambahan untuk menghitung assist dari properti event.assist
-            if ('assist' in event && event.assist) {
-                const assister = playerMap[event.assist]
-                if (assister) assister.assists++
             }
         }
     }
