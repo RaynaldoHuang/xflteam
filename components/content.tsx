@@ -146,6 +146,20 @@ export default async function HomeContent() {
                                                             🟨 <p className="ms-1 me-1">{player}</p>{minutes.join("’, ")}’
                                                         </div>
                                                     ))}
+
+                                                    {Object.entries(
+                                                        match.events
+                                                            ?.filter((e) => e.team === "home" && e.type === "red")
+                                                            .reduce((acc, e) => {
+                                                                if (!acc[e.player]) acc[e.player] = []
+                                                                acc[e.player].push(e.minute)
+                                                                return acc
+                                                            }, {} as Record<string, number[]>)
+                                                    ).map(([player, minutes], idx) => (
+                                                        <div key={`red-home-${idx}`} className="flex items-center">
+                                                            🟥 <p className="ms-1 me-1">{player}</p>{minutes.join("’, ")}’
+                                                        </div>
+                                                    ))}
                                                 </div>
                                                 <div className="text-xs text-red-950 mt-1 space-y-0.5">
                                                     {Object.entries(
@@ -174,6 +188,20 @@ export default async function HomeContent() {
                                                     ).map(([player, minutes], idx) => (
                                                         <div key={`yellow-${idx}`} className="flex items-center">
                                                             🟨 <p className="ms-1 me-1">{player}</p>{minutes.join("’, ")}’
+                                                        </div>
+                                                    ))}
+
+                                                    {Object.entries(
+                                                        match.events
+                                                            ?.filter((e) => e.team === "away" && e.type === "red")
+                                                            .reduce((acc, e) => {
+                                                                if (!acc[e.player]) acc[e.player] = []
+                                                                acc[e.player].push(e.minute)
+                                                                return acc
+                                                            }, {} as Record<string, number[]>)
+                                                    ).map(([player, minutes], idx) => (
+                                                        <div key={`red-away-${idx}`} className="flex items-center">
+                                                            🟥 <p className="ms-1 me-1">{player}</p>{minutes.join("’, ")}’
                                                         </div>
                                                     ))}
                                                 </div>
