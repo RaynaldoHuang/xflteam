@@ -7,7 +7,7 @@ export function getTeamStats(teamId: string) {
     const stats = types.map(type => {
         const filtered = matches.filter(
             m =>
-                m.type === type &&
+                m.competition === type &&
                 m.score &&
                 m.score.includes(":") &&
                 (m.homeTeamId === teamId || m.awayTeamId === teamId)

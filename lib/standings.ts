@@ -3,6 +3,18 @@ import { teams } from "./teams"
 
 const teamMap = Object.fromEntries(teams.map(team => [team.id, team]))
 
+// 🏁 Batas akhir minggu liga reguler (optional — bisa dipakai kalau butuh)
+const LEAGUE_LAST_WEEK = 7
+
+// 🏆 Tipe kompetisi & tahapan
+export type CompetitionType = "league" | "cup"
+export type StageType = "group" | "playoff" | "semifinal" | "final"
+
+// ✅ Helper cek apakah pertandingan knockout (tidak masuk klasemen)
+function isKnockoutStage(match: any) {
+    return match.stage === "playoff" || match.stage === "semifinal" || match.stage === "final"
+}
+
 interface TeamStats {
     id: string
     name: string
@@ -16,12 +28,16 @@ interface TeamStats {
     group: string
 }
 
-export function generateStandings(type: "league" | "cup" = "league", group?: "A" | "B") {
+export function generateStandings(
+    type: CompetitionType = "league",
+    group?: "A" | "B"
+) {
     const table: Record<string, TeamStats> = {}
 
-    // ⏩ Inisialisasi semua tim lebih awal
+    // ⏩ Inisialisasi semua tim sesuai group bila ada
     for (const team of teams) {
         if (group && team.group?.toLowerCase() !== group.toLowerCase()) continue
+
         table[team.id] = {
             id: team.id,
             name: team.name,
@@ -36,20 +52,25 @@ export function generateStandings(type: "league" | "cup" = "league", group?: "A"
         }
     }
 
-    const filteredMatches = matches.filter(match => match.type === type)
+    // ⏳ Filter match sesuai tipe kompetisi
+    const filteredMatches = matches.filter(match => match.competition === type)
 
     for (const match of filteredMatches) {
         const homeTeam = teamMap[match.homeTeamId]
         const awayTeam = teamMap[match.awayTeamId]
 
-        if (group && (homeTeam.group !== group || awayTeam.group !== group)) {
-            continue
-        }
+        if (!homeTeam || !awayTeam) continue
 
+        // Filter group jika diperlukan
+        if (group && (homeTeam.group !== group || awayTeam.group !== group)) continue
+
+        // ❌ Lewati knockout (playoff, semifinal, final)
+        if (isKnockoutStage(match)) continue
+
+        // ❌ Lewati match tanpa skor
         if (!match.score || !match.score.includes(":")) continue
 
         const [homeScore, awayScore] = match.score.split(":").map(Number)
-
         const home = table[homeTeam.id]
         const away = table[awayTeam.id]
 
@@ -72,28 +93,29 @@ export function generateStandings(type: "league" | "cup" = "league", group?: "A"
         }
     }
 
+    // 🔢 Hitung poin & goal difference
     const standings = Object.values(table).map(team => ({
         ...team,
         points: team.win * 2 + team.draw,
         gd: team.gf - team.ga,
     }))
 
+    // 📊 Urutan klasemen: Points → Head-to-Head (jika 2 tim) → GD → GF
     standings.sort((a, b) => {
-        // Kalau belum main, taruh di bawah
+        // Tim tanpa pertandingan diurut terakhir
         if (a.played === 0 && b.played > 0) return 1
         if (b.played === 0 && a.played > 0) return -1
 
-        // Urutkan poin dulu
+        // 1️⃣ Points
         if (b.points !== a.points) return b.points - a.points
 
-        // Cek berapa banyak tim yang punya poin sama
+        // 2️⃣ Head to head jika hanya 2 tim dengan poin sama
         const samePointsCount = standings.filter(t => t.points === a.points).length
-
         if (samePointsCount === 2) {
-            // Hanya dua tim dengan poin sama → gunakan H2H
             const h2hMatches = matches.filter(
                 (m) =>
-                    m.type === type &&
+                    m.competition === type &&              // ⬅️ sudah diganti
+                    !isKnockoutStage(m) &&
                     ((m.homeTeamId === a.id && m.awayTeamId === b.id) ||
                         (m.homeTeamId === b.id && m.awayTeamId === a.id)) &&
                     m.score &&
@@ -120,10 +142,10 @@ export function generateStandings(type: "league" | "cup" = "league", group?: "A"
             }
         }
 
-        // Kalau lebih dari dua tim atau H2H imbang → pakai GD
+        // 3️⃣ Goal Difference
         if (b.gd !== a.gd) return b.gd - a.gd
 
-        // Kalau GD sama → pakai Goals For
+        // 4️⃣ Goals For
         return b.gf - a.gf
     })
 

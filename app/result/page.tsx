@@ -4,8 +4,36 @@ import { useEffect, useState } from "react"
 import { matches } from "@/lib/matchday"
 import { teams } from "@/lib/teams"
 import dayjs from "dayjs"
+import "dayjs/locale/id"
+
+dayjs.locale("id")
 
 const teamMap = Object.fromEntries(teams.map(t => [t.id, t]))
+
+// 🏷️ Fungsi label stage pertandingan
+function getStageLabel(match: (typeof matches)[number]) {
+    if (!match) return "Unknown"
+
+    const comp = match.competition
+    const stage = match.stage
+
+    const labels: Record<string, Record<string, string>> = {
+        league: {
+            group: "League",
+            playoff: "League Playoff",
+            semifinal: "League Semifinal",
+            final: "League Final",
+        },
+        cup: {
+            group: "Cup",
+            playoff: "Cup Playoff",
+            semifinal: "Cup Semifinal",
+            final: "Cup Final",
+        },
+    }
+
+    return labels[comp]?.[stage] ?? "Unknown"
+}
 
 export default function MatchResults() {
     const [loading, setLoading] = useState(true)
@@ -24,8 +52,7 @@ export default function MatchResults() {
                 grouped[dateKey].push(match)
             }
 
-            const sorted = Object.keys(grouped).sort()
-
+            const sorted = Object.keys(grouped).sort().reverse()
             setMatchesByDate(grouped)
             setSortedDates(sorted)
             setLoading(false)
@@ -53,21 +80,29 @@ export default function MatchResults() {
     return (
         <div className="max-w-[430px] mx-4 space-y-4 pt-26 pb-20">
             {sortedDates.map((dateKey) => {
-                const weekMatches = matchesByDate[dateKey]
+                const dayMatches = matchesByDate[dateKey]
                 const formattedDate = dayjs(dateKey).format("dddd, DD MMMM YYYY")
-                const matchSample = weekMatches[0]
+
+                const matchSample = dayMatches[0]
+                const stageLabel = getStageLabel(matchSample)
                 const week = matchSample?.week
-                const type = matchSample?.type?.charAt(0).toUpperCase() + matchSample?.type?.slice(1)
 
                 return (
                     <div key={dateKey} className="space-y-2">
+                        {/* 🏷️ Header Label Pertandingan */}
                         <div className="bg-gray-200 px-3 py-2 text-sm font-medium rounded flex justify-between">
-                            <div>Week {week} • {type}</div>
+                            <div>
+                                {stageLabel}
+                                {week && matchSample.competition === "league" && (
+                                    <span className="ml-2 text-gray-600">• Week {week}</span>
+                                )}
+                            </div>
                             <div>{formattedDate}</div>
                         </div>
 
+                        {/* 🏟️ List pertandingan */}
                         <div className="space-y-2">
-                            {weekMatches.map((match, i) => {
+                            {dayMatches.map((match, i) => {
                                 const home = teamMap[match.homeTeamId]
                                 const away = teamMap[match.awayTeamId]
                                 const [homeScore, awayScore] = match.score.split(":").map(s => s.trim())
@@ -78,6 +113,7 @@ export default function MatchResults() {
                                         className="bg-white rounded-lg shadow px-4 py-3 items-center"
                                     >
                                         <div className="flex justify-between items-stretch">
+                                            {/* 🏠 Tim */}
                                             <div className="space-y-2">
                                                 <div className="flex items-center">
                                                     <img src={home.logo} alt={home.name} className="w-6 h-6 object-contain me-4" />
@@ -89,6 +125,7 @@ export default function MatchResults() {
                                                 </div>
                                             </div>
 
+                                            {/* 🔢 Skor & status */}
                                             <div className="flex items-center space-x-4 ps-4">
                                                 <div className="flex flex-col justify-center items-center text-right text-lg font-semibold">
                                                     <span>{homeScore}</span>

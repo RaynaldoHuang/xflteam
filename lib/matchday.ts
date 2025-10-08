@@ -1,13 +1,17 @@
+export type CompetitionType = "league" | "cup"
+export type StageType = "group" | "playoff" | "semifinal" | "final"
+
 export const matches: {
     homeTeamId: string
     awayTeamId: string
     score: string
     week: number
-    type: string
     date: string
     time: string
     venue: string
     events: MatchEvent[]
+    competition: CompetitionType
+    stage: StageType
 }[] = [
 
         //week1
@@ -16,7 +20,6 @@ export const matches: {
             awayTeamId: "blacklabel",
             score: "2 : 2",
             week: 1,
-            type: "league",
             date: "2025-07-31",
             time: "20:00",
             venue: "Lapangan B",
@@ -28,13 +31,15 @@ export const matches: {
                 { type: "goal", team: "away", player: "titus", minute: 12, assist: "zhongyen" },
                 { type: "yellow", team: "away", player: "willy", minute: 37 },
             ] as unknown as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "hennessy",
             awayTeamId: "cockburn",
             score: "1 : 1",
             week: 1,
-            type: "league",
+            
             date: "2025-07-31",
             time: "20:00",
             venue: "Lapangan C",
@@ -43,13 +48,15 @@ export const matches: {
                 { type: "yellow", team: "home", player: "yongsun", minute: 34 },
                 { type: "goal", team: "away", player: "nino", minute: 30, assist: "kibuk" },
             ] as unknown as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "macallan",
             awayTeamId: "singleton",
             score: "3 : 2",
             week: 1,
-            type: "league",
+            
             date: "2025-07-31",
             time: "21:00",
             venue: "Lapangan B",
@@ -60,13 +67,15 @@ export const matches: {
                 { type: "goal", team: "away", player: "mitra", minute: 12, assist: "rbonn" },
                 { type: "goal", team: "away", player: "acai", minute: 18, assist: "gabriel" },
             ] as unknown as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "hibiki",
             awayTeamId: "glenfiddich",
             score: "1 : 2",
             week: 1,
-            type: "league",
+            
             date: "2025-07-31",
             time: "21:00",
             venue: "Lapangan C",
@@ -75,6 +84,8 @@ export const matches: {
                 { type: "goal", team: "away", player: "bayu", minute: 22, assist: "tony" },
                 { type: "goal", team: "away", player: "bayu", minute: 47, assist: "tony" },
             ] as unknown as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
 
         //week2
@@ -83,7 +94,7 @@ export const matches: {
             awayTeamId: "cockburn",
             score: "1 : 3",
             week: 2,
-            type: "league",
+            
             date: "2025-08-7",
             time: "20:00",
             venue: "Lapangan B",
@@ -94,13 +105,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "chandri", minute: 35, assist: "raynaldo" },
                 { type: "yellow", team: "home", player: "daniel", minute: 39 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "hibiki",
             awayTeamId: "azul",
             score: "5 : 2",
             week: 2,
-            type: "league",
+            
             date: "2025-08-7",
             time: "20:00",
             venue: "Lapangan C",
@@ -115,13 +128,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "fauzi", minute: 46 },
                 { type: "yellow", team: "home", player: "fico", minute: 45 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "blacklabel",
             awayTeamId: "glenfiddich",
             score: "5 : 2",
             week: 2,
-            type: "league",
+            
             date: "2025-08-7",
             time: "21:00",
             venue: "Lapangan B",
@@ -136,13 +151,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "podiman", minute: 44 },
                 { type: "yellow", team: "home", player: "ferry", minute: 32 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "hennessy",
             awayTeamId: "singleton",
             score: "2 : 4",
             week: 2,
-            type: "league",
+            
             date: "2025-08-7",
             time: "21:00",
             venue: "Lapangan C",
@@ -154,6 +171,8 @@ export const matches: {
                 { type: "goal", team: "home", player: "awen", minute: 31 },
                 { type: "goal", team: "home", player: "salja", minute: 44 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
 
         //cup1
@@ -162,7 +181,7 @@ export const matches: {
             awayTeamId: "hibiki",
             score: "0 : 1",
             week: 1,
-            type: "cup",
+            
             date: "2025-08-14",
             time: "20:00",
             venue: "Lapangan B",
@@ -172,13 +191,15 @@ export const matches: {
                 { type: "yellow", team: "away", player: "fico", minute: 44 },
                 { type: "yellow", team: "home", player: "ferry", minute: 36 },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "glenfiddich",
             awayTeamId: "azul",
             score: "1 : 2",
             week: 1,
-            type: "cup",
+            
             date: "2025-08-14",
             time: "20:00",
             venue: "Lapangan C",
@@ -189,13 +210,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "yanssen", minute: 17, assist: "tony" },
                 { type: "yellow", team: "home", player: "desmond", minute: 16 },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "macallan",
             awayTeamId: "hennessy",
             score: "2 : 2",
             week: 1,
-            type: "cup",
+            
             date: "2025-08-14",
             time: "21:00",
             venue: "Lapangan B",
@@ -206,13 +229,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "henry", minute: 36, assist: "daniel" },
                 { type: "yellow", team: "home", player: "arifin", minute: 32 },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "singleton",
             awayTeamId: "cockburn",
             score: "5 : 2",
             week: 1,
-            type: "cup",
+            
             date: "2025-08-14",
             time: "21:00",
             venue: "Lapangan C",
@@ -225,6 +250,8 @@ export const matches: {
                 { type: "goal", team: "home", player: "vincent (OG)", minute: 44 },
                 { type: "goal", team: "home", player: "mitra", minute: 48, assist: "auco" },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
 
         //week3
@@ -233,7 +260,7 @@ export const matches: {
             awayTeamId: "hibiki",
             score: "3 : 5",
             week: 3,
-            type: "league",
+            
             date: "2025-08-21",
             time: "20:00",
             venue: "Lapangan B",
@@ -249,13 +276,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "acent", minute: 12, assist: "mitra" },
                 { type: "goal", team: "home", player: "auco", minute: 15 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "cockburn",
             awayTeamId: "blacklabel",
             score: "2 : 3",
             week: 3,
-            type: "league",
+            
             date: "2025-08-21",
             time: "20:00",
             venue: "Lapangan C",
@@ -268,13 +297,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "nino", minute: 20, assist: "edward" },
                 { type: "yellow", team: "home", player: "nino", minute: 25 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "azul",
             awayTeamId: "hennessy",
             score: "1 : 1",
             week: 3,
-            type: "league",
+            
             date: "2025-08-21",
             time: "21:00",
             venue: "Lapangan B",
@@ -282,13 +313,15 @@ export const matches: {
                 { type: "goal", team: "away", player: "awen", minute: 35 },
                 { type: "goal", team: "home", player: "yongky", minute: 25, assist: "ali" },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "glenfiddich",
             awayTeamId: "macallan",
             score: "1 : 3",
             week: 3,
-            type: "league",
+            
             date: "2025-08-21",
             time: "21:00",
             venue: "Lapangan C",
@@ -299,6 +332,8 @@ export const matches: {
 
                 { type: "goal", team: "home", player: "desmond", minute: 34, assist: "gil" },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
 
         //week4
@@ -307,7 +342,7 @@ export const matches: {
             awayTeamId: "macallan",
             score: "1 : 1",
             week: 4,
-            type: "league",
+            
             date: "2025-08-28",
             time: "20:00",
             venue: "Lapangan B",
@@ -316,26 +351,30 @@ export const matches: {
                 { type: "goal", team: "home", player: "jono", minute: 2, assist: "dicky" },
                 { type: "yellow", team: "home", player: "johanlim", minute: 37 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "hibiki",
             awayTeamId: "hennessy",
             score: "1 : 0",
             week: 4,
-            type: "league",
+            
             date: "2025-08-28",
             time: "20:00",
             venue: "Lapangan C",
             events: [
                 { type: "goal", team: "home", player: "davis", minute: 34 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "glenfiddich",
             awayTeamId: "cockburn",
             score: "1 : 2",
             week: 4,
-            type: "league",
+            
             date: "2025-08-28",
             time: "21:00",
             venue: "Lapangan B",
@@ -345,13 +384,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "desmond", minute: 26, assist: "tony" },
                 { type: "red", team: "home", player: "ryuzi", minute: 46 }
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "blacklabel",
             awayTeamId: "singleton",
             score: "1 : 2",
             week: 4,
-            type: "league",
+            
             date: "2025-08-28",
             time: "21:00",
             venue: "Lapangan C",
@@ -362,6 +403,8 @@ export const matches: {
                 { type: "goal", team: "home", player: "titus", minute: 48, assist: "zhongyen" },
                 { type: "yellow", team: "away", player: "aliang", minute: 30 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
 
         //cup2
@@ -370,7 +413,7 @@ export const matches: {
             awayTeamId: "azul",
             score: "4 : 0",
             week: 2,
-            type: "cup",
+            
             date: "2025-09-4",
             time: "20:00",
             venue: "Lapangan B",
@@ -380,13 +423,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "swan", minute: 39 },
                 { type: "goal", team: "home", player: "titus", minute: 42, assist: "bobby" },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "glenfiddich",
             awayTeamId: "hibiki",
             score: "0 : 4",
             week: 2,
-            type: "cup",
+            
             date: "2025-09-4",
             time: "20:00",
             venue: "Lapangan C",
@@ -396,13 +441,15 @@ export const matches: {
                 { type: "goal", team: "away", player: "manhoi", minute: 39, assist: "fauzi" },
                 { type: "goal", team: "away", player: "fauzi", minute: 46, assist: "ayang" },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "macallan",
             awayTeamId: "singleton",
             score: "2 : 0",
             week: 2,
-            type: "cup",
+            
             date: "2025-09-4",
             time: "21:00",
             venue: "Lapangan B",
@@ -410,13 +457,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "raynaldo", minute: 22 },
                 { type: "goal", team: "home", player: "daniel", minute: 42 },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "hennessy",
             awayTeamId: "cockburn",
             score: "1 : 1",
             week: 2,
-            type: "cup",
+            
             date: "2025-09-4",
             time: "21:00",
             venue: "Lapangan C",
@@ -424,6 +473,8 @@ export const matches: {
                 { type: "goal", team: "home", player: "awen", minute: 29, assist: "awai" },
                 { type: "goal", team: "away", player: "james", minute: 36, assist: "wong" },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
 
         //week5
@@ -432,7 +483,7 @@ export const matches: {
             awayTeamId: "hennessy",
             score: "4 : 1",
             week: 5,
-            type: "league",
+            
             date: "2025-09-11",
             time: "20:00",
             venue: "Lapangan B",
@@ -445,13 +496,15 @@ export const matches: {
 
                 { type: "goal", team: "away", player: "awen", minute: 10 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "singleton",
             awayTeamId: "glenfiddich",
             score: "5 : 4",
             week: 5,
-            type: "league",
+            
             date: "2025-09-11",
             time: "20:00",
             venue: "Lapangan C",
@@ -467,13 +520,15 @@ export const matches: {
                 { type: "goal", team: "away", player: "bayu", minute: 45, assist: "tony" },
                 { type: "goal", team: "away", player: "own goal", minute: 34 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "hibiki",
             awayTeamId: "macallan",
             score: "1 : 3",
             week: 5,
-            type: "league",
+            
             date: "2025-09-11",
             time: "21:00",
             venue: "Lapangan B",
@@ -483,13 +538,15 @@ export const matches: {
                 { type: "goal", team: "away", player: "raynaldo", minute: 34 },
                 { type: "goal", team: "away", player: "raynaldo", minute: 38 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "azul",
             awayTeamId: "cockburn",
             score: "1 : 2",
             week: 5,
-            type: "league",
+            
             date: "2025-09-11",
             time: "21:00",
             venue: "Lapangan C",
@@ -500,6 +557,8 @@ export const matches: {
                 { type: "goal", team: "away", player: "bram", minute: 32, assist: "nino" },
                 { type: "goal", team: "away", player: "wong", minute: 42, assist: "bram" },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
 
         //week6
@@ -508,7 +567,7 @@ export const matches: {
             awayTeamId: "cockburn",
             score: "2 : 2",
             week: 6,
-            type: "league",
+            
             date: "2025-09-18",
             time: "20:00",
             venue: "Lapangan B",
@@ -523,13 +582,15 @@ export const matches: {
                 { type: "yellow", team: "away", player: "wong", minute: 42 },
                 { type: "yellow", team: "away", player: "nino", minute: 40 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "blacklabel",
             awayTeamId: "macallan",
             score: "2 : 1",
             week: 6,
-            type: "league",
+            
             date: "2025-09-18",
             time: "20:00",
             venue: "Lapangan C",
@@ -540,13 +601,15 @@ export const matches: {
                 { type: "goal", team: "away", player: "henry", minute: 18 },
                 { type: "yellow", team: "away", player: "budju", minute: 38 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "singleton",
             awayTeamId: "azul",
             score: "3 : 3",
             week: 6,
-            type: "league",
+            
             date: "2025-09-18",
             time: "21:00",
             venue: "Lapangan B",
@@ -559,13 +622,15 @@ export const matches: {
                 { type: "goal", team: "home", player: "acent", minute: 7 },
                 { type: "goal", team: "home", player: "own goal", minute: 30 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "glenfiddich",
             awayTeamId: "hennessy",
             score: "1 : 1",
             week: 6,
-            type: "league",
+            
             date: "2025-09-18",
             time: "21:00",
             venue: "Lapangan C",
@@ -573,6 +638,8 @@ export const matches: {
                 { type: "goal", team: "away", player: "own goal", minute: 26 },
                 { type: "goal", team: "home", player: "tony", minute: 47, assist: "desmond" },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
 
         //cup3
@@ -581,7 +648,7 @@ export const matches: {
             awayTeamId: "glenfiddich",
             score: "2 : 5",
             week: 3,
-            type: "cup",
+            
             date: "2025-09-25",
             time: "20:00",
             venue: "Lapangan B",
@@ -597,13 +664,15 @@ export const matches: {
 
                 { type: "yellow", team: "away", player: "tony", minute: 45 },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "hibiki",
             awayTeamId: "azul",
             score: "3 : 4",
             week: 3,
-            type: "cup",
+            
             date: "2025-09-25",
             time: "20:00",
             venue: "Lapangan C",
@@ -620,13 +689,15 @@ export const matches: {
                 { type: "goal", team: "away", player: "johanlim", minute: 47 },
                 { type: "yellow", team: "away", player: "ricky", minute: 44 },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "macallan",
             awayTeamId: "cockburn",
             score: "3 : 3",
             week: 3,
-            type: "cup",
+            
             date: "2025-09-25",
             time: "21:00",
             venue: "Lapangan B",
@@ -641,13 +712,15 @@ export const matches: {
 
                 { type: "yellow", team: "away", player: "james", minute: 10 },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
         {
             homeTeamId: "singleton",
             awayTeamId: "hennessy",
             score: "7 : 2",
             week: 3,
-            type: "cup",
+            
             date: "2025-09-25",
             time: "21:00",
             venue: "Lapangan C",
@@ -663,60 +736,126 @@ export const matches: {
                 { type: "goal", team: "away", player: "william", minute: 8 },
                 { type: "goal", team: "away", player: "wewek", minute: 9 },
             ] as MatchEvent[],
+            competition: "cup",
+            stage: "group"
         },
 
         //week7
         {
             homeTeamId: "blacklabel",
             awayTeamId: "hibiki",
-            score: "0",
+            score: "2 : 1",
             week: 7,
-            type: "league",
+            
             date: "2025-10-2",
             time: "20:00",
             venue: "Lapangan B",
             events: [
-                // { type: "yellow", team: "away", player: "Marc G", minute: 62 },
-            ],
+                { type: "goal", team: "home", player: "aliang", minute: 10, assist: "podiman" },
+                { type: "goal", team: "home", player: "podiman", minute: 17 },
+
+                { type: "goal", team: "away", player: "riko", minute: 31 },
+                { type: "yellow", team: "away", player: "delvin", minute: 21 },
+                { type: "yellow", team: "away", player: "fico", minute: 36 },
+            ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "singleton",
             awayTeamId: "cockburn",
-            score: "0",
+            score: "2 : 3",
             week: 7,
-            type: "league",
+            
             date: "2025-10-2",
             time: "20:00",
             venue: "Lapangan C",
             events: [
-                // { type: "yellow", team: "away", player: "Marc G", minute: 62 },
-            ],
+                { type: "goal", team: "home", player: "rabin", minute: 11, assist: "kibuk" },
+                { type: "goal", team: "home", player: "wong", minute: 32 },
+                { type: "goal", team: "home", player: "nino", minute: 46 },
+
+                { type: "goal", team: "away", player: "kelvin", minute: 5, assist: "acent" },
+                { type: "goal", team: "away", player: "acent", minute: 29 },
+            ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "macallan",
             awayTeamId: "hennessy",
-            score: "0",
+            score: "4 : 1",
             week: 7,
-            type: "league",
+            
             date: "2025-10-2",
             time: "21:00",
             venue: "Lapangan B",
             events: [
-                // { type: "yellow", team: "away", player: "Marc G", minute: 62 },
-            ],
+                { type: "goal", team: "home", player: "raynaldo", minute: 5 },
+                { type: "goal", team: "home", player: "daniel", minute: 19 },
+                { type: "goal", team: "home", player: "awok", minute: 23 },
+                { type: "goal", team: "home", player: "awok", minute: 27, assist: "raynaldo" },
+
+                { type: "goal", team: "away", player: "laudek", minute: 33 },
+                { type: "yellow", team: "away", player: "laudek", minute: 17 },
+            ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
         },
         {
             homeTeamId: "azul",
             awayTeamId: "glenfiddich",
-            score: "0",
+            score: "0 : 0",
             week: 7,
-            type: "league",
+            
             date: "2025-10-2",
             time: "21:00",
             venue: "Lapangan C",
             events: [
                 // { type: "goal", team: "home", player: "bruno", minute: 23 },
             ] as MatchEvent[],
+            competition: "league",
+            stage: "group"
+        },
+
+        //playoff
+        {
+            homeTeamId: "hibiki",
+            awayTeamId: "glenfiddich",
+            score: "0",
+            week: 8,
+            
+            date: "2025-10-9",
+            time: "20:00",
+            venue: "Lapangan B",
+            events: [
+                // { type: "goal", team: "home", player: "aliang", minute: 10, assist: "podiman" },
+                // { type: "goal", team: "home", player: "podiman", minute: 17 },
+                // { type: "goal", team: "away", player: "riko", minute: 31 },
+                // { type: "yellow", team: "away", player: "delvin", minute: 21 },
+                // { type: "yellow", team: "away", player: "fico", minute: 36 },
+            ] as MatchEvent[],
+            competition: "league",
+            stage: "playoff"
+        },
+        {
+            homeTeamId: "azul",
+            awayTeamId: "singleton",
+            score: "0",
+            week: 8,
+            
+            date: "2025-10-9",
+            time: "20:00",
+            venue: "Lapangan C",
+            events: [
+                // { type: "goal", team: "home", player: "rabin", minute: 11, assist: "kibuk" },
+                // { type: "goal", team: "home", player: "wong", minute: 32 },
+                // { type: "goal", team: "home", player: "nino", minute: 46 },
+                // { type: "goal", team: "away", player: "kelvin", minute: 5, assist: "acent" },
+                // { type: "goal", team: "away", player: "acent", minute: 29 },
+            ] as MatchEvent[],
+            competition: "league",
+            stage: "playoff"
         },
     ]
 

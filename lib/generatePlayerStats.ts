@@ -18,11 +18,11 @@ export async function generatePlayerStats() {
             const player = playerMap[event.player]
             if (player) {
                 // ✅ Goal & Assist hanya dihitung di match league
-                if (match.type === "league" && event.type === "goal") {
+                if (match.competition === "league" && event.type === "goal") {
                     player.goals++
                 }
 
-                if (match.type === "league" && "assist" in event && event.assist) {
+                if (match.competition === "league" && "assist" in event && event.assist) {
                     const assister = playerMap[event.assist]
                     if (assister) assister.assists++
                 }
