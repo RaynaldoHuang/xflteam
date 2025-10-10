@@ -822,18 +822,16 @@ export const matches: {
         {
             homeTeamId: "hibiki",
             awayTeamId: "glenfiddich",
-            score: "0",
+            score: "0 : 2",
             week: 8,
             
             date: "2025-10-9",
             time: "20:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "home", player: "aliang", minute: 10, assist: "podiman" },
-                // { type: "goal", team: "home", player: "podiman", minute: 17 },
-                // { type: "goal", team: "away", player: "riko", minute: 31 },
-                // { type: "yellow", team: "away", player: "delvin", minute: 21 },
-                // { type: "yellow", team: "away", player: "fico", minute: 36 },
+                { type: "goal", team: "away", player: "gil", minute: 16},
+                { type: "goal", team: "away", player: "titus", minute: 36 },
+
             ] as MatchEvent[],
             competition: "league",
             stage: "playoff"
@@ -841,18 +839,40 @@ export const matches: {
         {
             homeTeamId: "azul",
             awayTeamId: "singleton",
-            score: "0",
+            score: "2 : 1",
             week: 8,
             
             date: "2025-10-9",
             time: "20:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "home", player: "rabin", minute: 11, assist: "kibuk" },
-                // { type: "goal", team: "home", player: "wong", minute: 32 },
-                // { type: "goal", team: "home", player: "nino", minute: 46 },
-                // { type: "goal", team: "away", player: "kelvin", minute: 5, assist: "acent" },
-                // { type: "goal", team: "away", player: "acent", minute: 29 },
+                { type: "goal", team: "home", player: "fahrun", minute: 14},
+                { type: "goal", team: "home", player: "winsen", minute: 32 },
+
+                { type: "goal", team: "away", player: "auco", minute: 22},
+            ] as MatchEvent[],
+            competition: "league",
+            stage: "playoff"
+        },
+
+        {
+            homeTeamId: "glenfiddich",
+            awayTeamId: "azul",
+            score: "4 : 1",
+            week: 8,
+            
+            date: "2025-10-9",
+            time: "21:00",
+            venue: "Lapangan B",
+            events: [
+                { type: "goal", team: "home", player: "tony", minute: 14},
+                { type: "yellow", team: "home", player: "tony", minute: 36},
+                { type: "goal", team: "home", player: "own goal", minute: 22 },
+
+                { type: "goal", team: "home", player: "gil", minute: 32},
+                { type: "goal", team: "home", player: "akok", minute: 41},
+
+                { type: "goal", team: "away", player: "cieks", minute: 18},
             ] as MatchEvent[],
             competition: "league",
             stage: "playoff"
