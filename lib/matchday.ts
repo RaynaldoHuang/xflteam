@@ -877,6 +877,43 @@ export const matches: {
             competition: "league",
             stage: "playoff"
         },
+
+        //semifinal
+        {
+            homeTeamId: "azul",
+            awayTeamId: "singleton",
+            score: "0",
+            week: 4,
+            
+            date: "2025-10-23",
+            time: "20:00",
+            venue: "Lapangan B",
+            events: [
+                // { type: "goal", team: "away", player: "gil", minute: 16},
+                // { type: "goal", team: "away", player: "titus", minute: 36 },
+
+            ] as MatchEvent[],
+            competition: "cup",
+            stage: "semifinal"
+        },
+
+        {
+            homeTeamId: "hibiki",
+            awayTeamId: "macallan",
+            score: "0",
+            week: 4,
+            
+            date: "2025-10-23",
+            time: "21:00",
+            venue: "Lapangan B",
+            events: [
+                // { type: "goal", team: "away", player: "gil", minute: 16},
+                // { type: "goal", team: "away", player: "titus", minute: 36 },
+
+            ] as MatchEvent[],
+            competition: "cup",
+            stage: "semifinal"
+        },
     ]
 
 type MatchEvent = {
