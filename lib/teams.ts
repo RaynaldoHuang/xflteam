@@ -2,49 +2,49 @@ export const teams = [
     {
         id: "macallan",
         name: "Macallan",
-        logo: "/svg/macallan.svg",
+        logo: "/logoteams/conan.webp",
         group: "B"
     },
     {
         id: "hennessy",
         name: "Hennessy",
-        logo: "/svg/henessy.svg",
+        logo: "/logoteams/demonslayer.webp",
         group: "B"
     },
     {
         id: "singleton",
         name: "Singleton",
-        logo: "/svg/singleton.svg",
+        logo: "/logoteams/dragonball.webp",
         group: "B"
     },
     {
         id: "blacklabel",
         name: "Black label",
-        logo: "/svg/blacklabel.svg",
+        logo: "/logoteams/jujutsu.webp",
         group: "A"
     },
     {
         id: "glenfiddich",
         name: "Glenfiddich",
-        logo: "/svg/glenfiddich.svg",
+        logo: "/logoteams/onepunch.webp",
         group: "A"
     },
     {
         id: "azul",
         name: "Azul",
-        logo: "/svg/azul.svg",
+        logo: "/logoteams/tokyoghoul.webp",
         group: "A"
     },
     {
         id: "hibiki",
         name: "Hibiki",
-        logo: "/svg/hibiki.svg",
+        logo: "/logoteams/uzumaki.webp",
         group: "A"
     },
     {
         id: "cockburn",
         name: "Cockburn",
-        logo: "/svg/cockburn.svg",
+        logo: "/logoteams/onepiece.webp",
         group: "B"
     },
     // Tambah tim lain di sini...
