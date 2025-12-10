@@ -22,7 +22,7 @@ export const matches: {
             week: 1,
             date: "2025-12-11",
             time: "20:00",
-            venue: "Lapangan A",
+            venue: "Lapangan B",
             events: [
                 // { type: "goal", team: "home", player: "jono", minute: 20, assist: "cibex" },
                 // { type: "goal", team: "home", player: "cibex", minute: 23, assist: "jono" },
