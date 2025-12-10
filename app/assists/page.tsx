@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { generatePlayerStats } from "@/lib/generatePlayerStats"
 import { getTeamById } from "@/lib/getTeamById"
 import Image from "next/image"
-import profiledefault from "@/public/img/profiledefault.jpg"
+import profiledefault from "@/public/img/profiledefault.webp"
 
 export default function TopAssists() {
     const [loading, setLoading] = useState(true)

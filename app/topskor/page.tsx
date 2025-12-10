@@ -60,7 +60,7 @@ export default function TopScorersPage() {
                             <div className="flex items-center gap-3">
                                 <div className="w-12 h-12 relative rounded-full overflow-hidden bg-gray-200">
                                     <Image
-                                        src={player.photo || "/img/profiledefault.jpg"}
+                                        src={player.photo || "/img/profiledefault.webp"}
                                         alt={player.name}
                                         fill
                                         className="object-cover"
