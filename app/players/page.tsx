@@ -6,7 +6,7 @@ import { teams } from "@/lib/teams"
 import Image from "next/image"
 import Link from "next/link"
 
-import profiledefault from "@/public/img/profiledefault.jpg"
+import profiledefault from "@/public/img/profiledefault.webp"
 import { ChevronRight } from "lucide-react"
 
 export default function PlayersPage() {

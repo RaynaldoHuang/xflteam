@@ -16,13 +16,13 @@ export const matches: {
 
         //week1
         {
-            homeTeamId: "azul",
-            awayTeamId: "blacklabel",
+            homeTeamId: "naruto",
+            awayTeamId: "pokemon",
             score: "0",
             week: 1,
-            date: "2025-07-31",
+            date: "2025-12-11",
             time: "20:00",
-            venue: "Lapangan B",
+            venue: "Lapangan A",
             events: [
                 // { type: "goal", team: "home", player: "jono", minute: 20, assist: "cibex" },
                 // { type: "goal", team: "home", player: "cibex", minute: 23, assist: "jono" },
@@ -35,12 +35,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "hennessy",
-            awayTeamId: "cockburn",
+            homeTeamId: "digimon",
+            awayTeamId: "doraemon",
             score: "0",
             week: 1,
             
-            date: "2025-07-31",
+            date: "2025-12-11",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -52,12 +52,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "macallan",
-            awayTeamId: "singleton",
+            homeTeamId: "conan",
+            awayTeamId: "dragonball",
             score: "0",
             week: 1,
             
-            date: "2025-07-31",
+            date: "2025-12-11",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -71,12 +71,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "hibiki",
-            awayTeamId: "glenfiddich",
+            homeTeamId: "onepiece",
+            awayTeamId: "sinchan",
             score: "0",
             week: 1,
             
-            date: "2025-07-31",
+            date: "2025-12-11",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -90,12 +90,12 @@ export const matches: {
 
         //week2
         {
-            homeTeamId: "macallan",
-            awayTeamId: "cockburn",
+            homeTeamId: "conan",
+            awayTeamId: "doraemon",
             score: "0",
             week: 2,
             
-            date: "2025-08-7",
+            date: "2025-12-18",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -109,12 +109,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "hibiki",
-            awayTeamId: "azul",
+            homeTeamId: "onepiece",
+            awayTeamId: "naruto",
             score: "0",
             week: 2,
             
-            date: "2025-08-7",
+            date: "2025-12-18",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -132,12 +132,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "blacklabel",
-            awayTeamId: "glenfiddich",
+            homeTeamId: "pokemon",
+            awayTeamId: "sinchan",
             score: "0",
             week: 2,
             
-            date: "2025-08-7",
+            date: "2025-12-18",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -155,12 +155,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "hennessy",
-            awayTeamId: "singleton",
+            homeTeamId: "dragonball",
+            awayTeamId: "digimon",
             score: "0",
             week: 2,
             
-            date: "2025-08-7",
+            date: "2025-12-18",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -177,12 +177,12 @@ export const matches: {
 
         //cup1
         {
-            homeTeamId: "blacklabel",
-            awayTeamId: "hibiki",
+            homeTeamId: "pokemon",
+            awayTeamId: "onepiece",
             score: "0",
             week: 1,
             
-            date: "2025-08-14",
+            date: "2026-01-8",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -195,12 +195,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "glenfiddich",
-            awayTeamId: "azul",
+            homeTeamId: "naruto",
+            awayTeamId: "sinchan",
             score: "0",
             week: 1,
             
-            date: "2025-08-14",
+            date: "2026-01-8",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -214,12 +214,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "macallan",
-            awayTeamId: "hennessy",
+            homeTeamId: "conan",
+            awayTeamId: "digimon",
             score: "0",
             week: 1,
             
-            date: "2025-08-14",
+            date: "2026-01-8",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -233,12 +233,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "singleton",
-            awayTeamId: "cockburn",
+            homeTeamId: "dragonball",
+            awayTeamId: "doraemon",
             score: "0",
             week: 1,
             
-            date: "2025-08-14",
+            date: "2026-01-8",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -256,12 +256,12 @@ export const matches: {
 
         //week3
         {
-            homeTeamId: "singleton",
-            awayTeamId: "hibiki",
+            homeTeamId: "dragonball",
+            awayTeamId: "onepiece",
             score: "0",
             week: 3,
             
-            date: "2025-08-21",
+            date: "2026-01-15",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -280,12 +280,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "cockburn",
-            awayTeamId: "blacklabel",
+            homeTeamId: "doraemon",
+            awayTeamId: "pokemon",
             score: "0",
             week: 3,
             
-            date: "2025-08-21",
+            date: "2026-01-15",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -301,12 +301,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "azul",
-            awayTeamId: "hennessy",
+            homeTeamId: "naruto",
+            awayTeamId: "digimon",
             score: "0",
             week: 3,
             
-            date: "2025-08-21",
+            date: "2026-01-15",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -317,12 +317,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "glenfiddich",
-            awayTeamId: "macallan",
+            homeTeamId: "sinchan",
+            awayTeamId: "conan",
             score: "0",
             week: 3,
             
-            date: "2025-08-21",
+            date: "2026-01-15",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -338,12 +338,12 @@ export const matches: {
 
         //week4
         {
-            homeTeamId: "azul",
-            awayTeamId: "macallan",
+            homeTeamId: "naruto",
+            awayTeamId: "conan",
             score: "0",
             week: 4,
             
-            date: "2025-08-28",
+            date: "2026-01-22",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -355,12 +355,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "hibiki",
-            awayTeamId: "hennessy",
+            homeTeamId: "onepiece",
+            awayTeamId: "digimon",
             score: "0",
             week: 4,
             
-            date: "2025-08-28",
+            date: "2026-01-22",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -370,12 +370,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "glenfiddich",
-            awayTeamId: "cockburn",
+            homeTeamId: "doraemon",
+            awayTeamId: "sinchan",
             score: "0",
             week: 4,
             
-            date: "2025-08-28",
+            date: "2026-01-22",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -388,12 +388,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "blacklabel",
-            awayTeamId: "singleton",
+            homeTeamId: "pokemon",
+            awayTeamId: "dragonball",
             score: "0",
             week: 4,
             
-            date: "2025-08-28",
+            date: "2026-01-22",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -409,12 +409,12 @@ export const matches: {
 
         //cup2
         {
-            homeTeamId: "blacklabel",
-            awayTeamId: "azul",
+            homeTeamId: "pokemon",
+            awayTeamId: "naruto",
             score: "0",
             week: 2,
             
-            date: "2025-09-4",
+            date: "2026-01-29",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -427,12 +427,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "glenfiddich",
-            awayTeamId: "hibiki",
+            homeTeamId: "onepiece",
+            awayTeamId: "sinchan",
             score: "0",
             week: 2,
             
-            date: "2025-09-4",
+            date: "2026-01-29",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -445,12 +445,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "macallan",
-            awayTeamId: "singleton",
+            homeTeamId: "conan",
+            awayTeamId: "dragonball",
             score: "0",
             week: 2,
             
-            date: "2025-09-4",
+            date: "2026-01-29",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -461,12 +461,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "hennessy",
-            awayTeamId: "cockburn",
+            homeTeamId: "digimon",
+            awayTeamId: "doraemon",
             score: "0",
             week: 2,
             
-            date: "2025-09-4",
+            date: "2026-01-29",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -479,12 +479,12 @@ export const matches: {
 
         //week5
         {
-            homeTeamId: "blacklabel",
-            awayTeamId: "hennessy",
+            homeTeamId: "pokemon",
+            awayTeamId: "conan",
             score: "0",
             week: 5,
             
-            date: "2025-09-11",
+            date: "2026-02-5",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -500,12 +500,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "singleton",
-            awayTeamId: "glenfiddich",
+            homeTeamId: "dragonball",
+            awayTeamId: "sinchan",
             score: "0",
             week: 5,
             
-            date: "2025-09-11",
+            date: "2026-02-5",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -524,12 +524,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "hibiki",
-            awayTeamId: "macallan",
+            homeTeamId: "onepiece",
+            awayTeamId: "conan",
             score: "0",
             week: 5,
             
-            date: "2025-09-11",
+            date: "2026-02-5",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -542,12 +542,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "azul",
-            awayTeamId: "cockburn",
+            homeTeamId: "naruto",
+            awayTeamId: "doraemon",
             score: "0",
             week: 5,
             
-            date: "2025-09-11",
+            date: "2026-02-5",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -563,12 +563,12 @@ export const matches: {
 
         //week6
         {
-            homeTeamId: "hibiki",
-            awayTeamId: "cockburn",
+            homeTeamId: "onepiece",
+            awayTeamId: "doraemon",
             score: "0",
             week: 6,
             
-            date: "2025-09-18",
+            date: "2026-02-12",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -586,12 +586,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "blacklabel",
-            awayTeamId: "macallan",
+            homeTeamId: "pokemon",
+            awayTeamId: "conan",
             score: "0",
             week: 6,
             
-            date: "2025-09-18",
+            date: "2026-02-12",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -605,12 +605,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "singleton",
-            awayTeamId: "azul",
+            homeTeamId: "dragonball",
+            awayTeamId: "naruto",
             score: "0",
             week: 6,
             
-            date: "2025-09-18",
+            date: "2026-02-12",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -626,12 +626,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "glenfiddich",
-            awayTeamId: "hennessy",
+            homeTeamId: "sinchan",
+            awayTeamId: "digimon",
             score: "0",
             week: 6,
             
-            date: "2025-09-18",
+            date: "2026-02-12",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -644,12 +644,12 @@ export const matches: {
 
         //cup3
         {
-            homeTeamId: "blacklabel",
-            awayTeamId: "glenfiddich",
+            homeTeamId: "pokemon",
+            awayTeamId: "sinchan",
             score: "0",
             week: 3,
             
-            date: "2025-09-25",
+            date: "2026-02-26",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -668,12 +668,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "hibiki",
-            awayTeamId: "azul",
+            homeTeamId: "onepiece",
+            awayTeamId: "naruto",
             score: "0",
             week: 3,
             
-            date: "2025-09-25",
+            date: "2026-02-26",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -693,12 +693,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "macallan",
-            awayTeamId: "cockburn",
+            homeTeamId: "conan",
+            awayTeamId: "doraemon",
             score: "0",
             week: 3,
             
-            date: "2025-09-25",
+            date: "2026-02-26",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -716,12 +716,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "singleton",
-            awayTeamId: "hennessy",
+            homeTeamId: "digimon",
+            awayTeamId: "dragonball",
             score: "0",
             week: 3,
             
-            date: "2025-09-25",
+            date: "2026-02-26",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -742,12 +742,12 @@ export const matches: {
 
         //week7
         {
-            homeTeamId: "blacklabel",
-            awayTeamId: "hibiki",
+            homeTeamId: "naruto",
+            awayTeamId: "sinchan",
             score: "0",
             week: 7,
             
-            date: "2025-10-2",
+            date: "2026-03-5",
             time: "20:00",
             venue: "Lapangan B",
             events: [
@@ -762,12 +762,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "singleton",
-            awayTeamId: "cockburn",
+            homeTeamId: "dragonball",
+            awayTeamId: "doraemon",
             score: "0",
             week: 7,
             
-            date: "2025-10-2",
+            date: "2026-03-5",
             time: "20:00",
             venue: "Lapangan C",
             events: [
@@ -782,12 +782,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "macallan",
-            awayTeamId: "hennessy",
+            homeTeamId: "conan",
+            awayTeamId: "digimon",
             score: "0",
             week: 7,
             
-            date: "2025-10-2",
+            date: "2026-03-5",
             time: "21:00",
             venue: "Lapangan B",
             events: [
@@ -803,12 +803,12 @@ export const matches: {
             stage: "group"
         },
         {
-            homeTeamId: "azul",
-            awayTeamId: "glenfiddich",
+            homeTeamId: "onepiece",
+            awayTeamId: "pokemon",
             score: "0",
             week: 7,
             
-            date: "2025-10-2",
+            date: "2026-03-5",
             time: "21:00",
             venue: "Lapangan C",
             events: [
@@ -819,101 +819,86 @@ export const matches: {
         },
 
         //playoff
-        {
-            homeTeamId: "hibiki",
-            awayTeamId: "glenfiddich",
-            score: "0",
-            week: 8,
+        // {
+        //     homeTeamId: "hibiki",
+        //     awayTeamId: "glenfiddich",
+        //     score: "0",
+        //     week: 8,
             
-            date: "2025-10-9",
-            time: "20:00",
-            venue: "Lapangan B",
-            events: [
-                // { type: "goal", team: "away", player: "gil", minute: 16},
-                // { type: "goal", team: "away", player: "titus", minute: 36 },
-
-            ] as MatchEvent[],
-            competition: "league",
-            stage: "playoff"
-        },
-        {
-            homeTeamId: "azul",
-            awayTeamId: "singleton",
-            score: "0",
-            week: 8,
+        //     date: "2025-10-9",
+        //     time: "20:00",
+        //     venue: "Lapangan B",
+        //     events: [
+        
+        //     ] as MatchEvent[],
+        //     competition: "league",
+        //     stage: "playoff"
+        // },
+        // {
+        //     homeTeamId: "azul",
+        //     awayTeamId: "singleton",
+        //     score: "0",
+        //     week: 8,
             
-            date: "2025-10-9",
-            time: "20:00",
-            venue: "Lapangan C",
-            events: [
-                // { type: "goal", team: "home", player: "fahrun", minute: 14},
-                // { type: "goal", team: "home", player: "winsen", minute: 32 },
-
-                // { type: "goal", team: "away", player: "auco", minute: 22},
-            ] as MatchEvent[],
-            competition: "league",
-            stage: "playoff"
-        },
-
-        {
-            homeTeamId: "glenfiddich",
-            awayTeamId: "azul",
-            score: "0",
-            week: 8,
+        //     date: "2025-10-9",
+        //     time: "20:00",
+        //     venue: "Lapangan C",
+        //     events: [
             
-            date: "2025-10-9",
-            time: "21:00",
-            venue: "Lapangan B",
-            events: [
-                // { type: "goal", team: "home", player: "tony", minute: 14},
-                // { type: "yellow", team: "home", player: "tony", minute: 36},
-                // { type: "goal", team: "home", player: "own goal", minute: 22 },
+        //     ] as MatchEvent[],
+        //     competition: "league",
+        //     stage: "playoff"
+        // },
 
-                // { type: "goal", team: "home", player: "gil", minute: 32},
-                // { type: "goal", team: "home", player: "akok", minute: 41},
-
-                // { type: "goal", team: "away", player: "cieks", minute: 18},
-            ] as MatchEvent[],
-            competition: "league",
-            stage: "playoff"
-        },
+        // {
+        //     homeTeamId: "glenfiddich",
+        //     awayTeamId: "azul",
+        //     score: "0",
+        //     week: 8,
+            
+        //     date: "2025-10-9",
+        //     time: "21:00",
+        //     venue: "Lapangan B",
+        //     events: [
+                
+        //     ] as MatchEvent[],
+        //     competition: "league",
+        //     stage: "playoff"
+        // },
 
         //semifinal
-        {
-            homeTeamId: "azul",
-            awayTeamId: "singleton",
-            score: "0",
-            week: 4,
+        // {
+        //     homeTeamId: "azul",
+        //     awayTeamId: "singleton",
+        //     score: "0",
+        //     week: 4,
             
-            date: "2025-10-23",
-            time: "20:00",
-            venue: "Lapangan B",
-            events: [
-                // { type: "goal", team: "away", player: "gil", minute: 16},
-                // { type: "goal", team: "away", player: "titus", minute: 36 },
+        //     date: "2025-10-23",
+        //     time: "20:00",
+        //     venue: "Lapangan B",
+        //     events: [
+               
 
-            ] as MatchEvent[],
-            competition: "cup",
-            stage: "semifinal"
-        },
+        //     ] as MatchEvent[],
+        //     competition: "cup",
+        //     stage: "semifinal"
+        // },
 
-        {
-            homeTeamId: "hibiki",
-            awayTeamId: "macallan",
-            score: "0",
-            week: 4,
+        // {
+        //     homeTeamId: "hibiki",
+        //     awayTeamId: "macallan",
+        //     score: "0",
+        //     week: 4,
             
-            date: "2025-10-23",
-            time: "21:00",
-            venue: "Lapangan B",
-            events: [
-                // { type: "goal", team: "away", player: "gil", minute: 16},
-                // { type: "goal", team: "away", player: "titus", minute: 36 },
-
-            ] as MatchEvent[],
-            competition: "cup",
-            stage: "semifinal"
-        },
+        //     date: "2025-10-23",
+        //     time: "21:00",
+        //     venue: "Lapangan B",
+        //     events: [
+                
+        //     ] as MatchEvent[],
+        //     competition: "cup",
+        //     stage: "semifinal"
+        // },
     ]
 
 type MatchEvent = {

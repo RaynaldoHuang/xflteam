@@ -1,50 +1,50 @@
 export const teams = [
     {
-        id: "macallan",
-        name: "Macallan",
-        logo: "/logoteams/conan.webp",
-        group: "B"
-    },
-    {
-        id: "hennessy",
-        name: "Hennessy",
-        logo: "/logoteams/demonslayer.webp",
-        group: "B"
-    },
-    {
-        id: "singleton",
-        name: "Singleton",
-        logo: "/logoteams/dragonball.webp",
-        group: "B"
-    },
-    {
-        id: "blacklabel",
-        name: "Black label",
-        logo: "/logoteams/jujutsu.webp",
+        id: "pokemon",
+        name: "Pokemon",
+        logo: "/logoteams/pokemon.webp",
         group: "A"
     },
     {
-        id: "glenfiddich",
-        name: "Glenfiddich",
-        logo: "/logoteams/onepunch.webp",
+        id: "onepiece",
+        name: "One Piece",
+        logo: "/logoteams/onepiece.webp",
         group: "A"
     },
     {
-        id: "azul",
-        name: "Azul",
-        logo: "/logoteams/tokyoghoul.webp",
-        group: "A"
-    },
-    {
-        id: "hibiki",
-        name: "Hibiki",
+        id: "naruto",
+        name: "Naruto",
         logo: "/logoteams/uzumaki.webp",
         group: "A"
     },
     {
-        id: "cockburn",
-        name: "Cockburn",
-        logo: "/logoteams/onepiece.webp",
+        id: "sinchan",
+        name: "Sinchan",
+        logo: "/logoteams/sinchan.webp",
+        group: "A"
+    },
+    {
+        id: "conan",
+        name: "Conan",
+        logo: "/logoteams/conan.webp",
+        group: "B"
+    },
+    {
+        id: "digimon",
+        name: "Digimon",
+        logo: "/logoteams/digimon.webp",
+        group: "B"
+    },
+    {
+        id: "dragonball",
+        name: "Dragon Ball",
+        logo: "/logoteams/dragonball.webp",
+        group: "B"
+    },
+    {
+        id: "doraemon",
+        name: "Doraemon",
+        logo: "/logoteams/doraemon.webp",
         group: "B"
     },
     // Tambah tim lain di sini...

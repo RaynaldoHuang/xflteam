@@ -36,7 +36,7 @@ export default function PlayerDetailPage() {
         <div className="max-w-[430px] mx-auto px-4 pt-24 pb-20">
             <div className="flex flex-col items-center">
                 <Image
-                    src={player.photo || "/img/profiledefault.jpg"}
+                    src={player.photo || "/img/profiledefault.webp"}
                     alt={player.name}
                     width={100}
                     height={100}
