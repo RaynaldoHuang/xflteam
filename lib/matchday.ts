@@ -18,18 +18,16 @@ export const matches: {
         {
             homeTeamId: "naruto",
             awayTeamId: "pokemon",
-            score: "0",
+            score: "4 : 0",
             week: 1,
             date: "2025-12-11",
             time: "20:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "home", player: "jono", minute: 20, assist: "cibex" },
-                // { type: "goal", team: "home", player: "cibex", minute: 23, assist: "jono" },
-                // { type: "yellow", team: "home", player: "ricky", minute: 45 },
-                // { type: "goal", team: "away", player: "titus", minute: 3, assist: "swan" },
-                // { type: "goal", team: "away", player: "titus", minute: 12, assist: "zhongyen" },
-                // { type: "yellow", team: "away", player: "willy", minute: 37 },
+                { type: "goal", team: "home", player: "Suryadi", minute: 19},
+                { type: "goal", team: "home", player: "Titus", minute: 34},
+                { type: "goal", team: "home", player: "Lewis", minute: 40, assist: "Titus" },
+                { type: "goal", team: "home", player: "Doni", minute: 43, assist: "Titus" },
             ] as unknown as MatchEvent[],
             competition: "league",
             stage: "group"
@@ -37,16 +35,22 @@ export const matches: {
         {
             homeTeamId: "digimon",
             awayTeamId: "doraemon",
-            score: "0",
+            score: "3 : 1",
             week: 1,
             
             date: "2025-12-11",
             time: "20:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "home", player: "wong (OG)", minute: 15 },
-                // { type: "yellow", team: "home", player: "yongsun", minute: 34 },
-                // { type: "goal", team: "away", player: "nino", minute: 30, assist: "kibuk" },
+                { type: "goal", team: "home", player: "Ringgo", minute: 2 },
+                { type: "goal", team: "home", player: "Ringgo", minute: 22, assist: "Acai" },
+                { type: "goal", team: "home", player: "Tony", minute: 24, assist: "Acai" },
+                { type: "yellow", team: "home", player: "Nickson", minute: 31},
+                { type: "yellow", team: "home", player: "Riko", minute: 40},
+
+                { type: "goal", team: "away", player: "Rbonn", minute: 10, assist: "Desmond"},
+
+
             ] as unknown as MatchEvent[],
             competition: "league",
             stage: "group"
@@ -54,18 +58,24 @@ export const matches: {
         {
             homeTeamId: "conan",
             awayTeamId: "dragonball",
-            score: "0",
+            score: "5 : 4",
             week: 1,
             
             date: "2025-12-11",
             time: "21:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "home", player: "daniel", minute: 3 },
-                // { type: "goal", team: "home", player: "bambang", minute: 31 },
-                // { type: "goal", team: "home", player: "budju", minute: 46, assist: "herwin" },
-                // { type: "goal", team: "away", player: "mitra", minute: 12, assist: "rbonn" },
-                // { type: "goal", team: "away", player: "acai", minute: 18, assist: "gabriel" },
+                { type: "goal", team: "home", player: "Jono", minute: 18, assist: "Mitra" },
+                { type: "goal", team: "home", player: "Effendy", minute: 27 },
+                { type: "goal", team: "home", player: "Mitra", minute: 30},
+                { type: "goal", team: "home", player: "Acunk", minute: 36, assist: "Jono" },
+                { type: "goal", team: "home", player: "Jono", minute: 42},
+                { type: "yellow", team: "home", player: "Mitra", minute: 42},
+
+                { type: "goal", team: "away", player: "Reno", minute: 10},
+                { type: "goal", team: "away", player: "Aguan", minute: 13, assist: "78" },
+                { type: "goal", team: "away", player: "Hendrik", minute: 24},
+                { type: "goal", team: "away", player: "Ryuzi", minute: 29},
             ] as unknown as MatchEvent[],
             competition: "league",
             stage: "group"
@@ -73,16 +83,28 @@ export const matches: {
         {
             homeTeamId: "onepiece",
             awayTeamId: "sinchan",
-            score: "0",
+            score: "3 : 6",
             week: 1,
             
             date: "2025-12-11",
             time: "21:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "home", player: "fauzi", minute: 44, assist: "riko" },
-                // { type: "goal", team: "away", player: "bayu", minute: 22, assist: "tony" },
-                // { type: "goal", team: "away", player: "bayu", minute: 47, assist: "tony" },
+                { type: "goal", team: "home", player: "Bobby", minute: 26},
+                { type: "goal", team: "home", player: "Effendy Olif", minute: 32, assist: "Acent"},
+                { type: "goal", team: "home", player: "Bram", minute: 38},
+                { type: "red", team: "home", player: "Sinaga", minute: 46},
+                { type: "yellow", team: "home", player: "Bobby", minute: 46},
+                
+                { type: "goal", team: "away", player: "Tanado", minute: 12, assist: "Wong" },
+                { type: "goal", team: "away", player: "Raynaldo", minute: 17, assist: "Ayang" },
+                { type: "goal", team: "away", player: "Gabriel", minute: 18},
+                { type: "goal", team: "away", player: "Raynaldo", minute: 21, assist: "Wong" },
+                { type: "goal", team: "away", player: "Awen", minute: 17, assist: "Ayang" },
+                { type: "goal", team: "away", player: "Tanado", minute: 17, assist: "Zhong Yen" },
+                { type: "yellow", team: "away", player: "Awen", minute: 26},
+                { type: "yellow", team: "away", player: "Raynaldo", minute: 42},
+                { type: "red", team: "away", player: "Daniel", minute: 46},
             ] as unknown as MatchEvent[],
             competition: "league",
             stage: "group"

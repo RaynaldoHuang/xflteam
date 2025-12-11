@@ -1,4 +1,3 @@
-// lib/generatePlayerStats.ts
 import { matches } from "./matchday"
 import { players } from "./players"
 
@@ -11,23 +10,27 @@ export async function generatePlayerStats() {
         redCards: 0,
     }))
 
-    const playerMap = Object.fromEntries(stats.map(p => [p.id, p]))
+    // Map pemain berdasarkan NAMA
+    const playerMapByName = Object.fromEntries(
+        stats.map(p => [p.name.toLowerCase(), p])
+    )
 
     for (const match of matches) {
         for (const event of match.events || []) {
-            const player = playerMap[event.player]
+            const player = playerMapByName[event.player?.toLowerCase()]
             if (player) {
-                // ✅ Goal & Assist hanya dihitung jika match league dan bukan playoff
+                // Goal dihitung hanya league + bukan playoff
                 if (match.competition === "league" && match.stage !== "playoff" && event.type === "goal") {
                     player.goals++
                 }
 
+                // Assist dihitung
                 if (match.competition === "league" && match.stage !== "playoff" && "assist" in event && event.assist) {
-                    const assister = playerMap[event.assist]
+                    const assister = playerMapByName[event.assist.toLowerCase()]
                     if (assister) assister.assists++
                 }
 
-                // ✅ Kartu dihitung untuk semua tipe match
+                // Kartu untuk semua kompetisi
                 if (event.type === "yellow") player.yellowCards++
                 if (event.type === "red") player.redCards++
             }

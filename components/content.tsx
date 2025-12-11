@@ -26,7 +26,7 @@ export default async function HomeContent() {
                 <div className="w-full max-w-[430px] mx-auto">
                     <div className="mx-4">
                         <div className="flex justify-between mt-4 mb-3 items-center">
-                            <h1 className="font-[family-name:var(--space-grotesk)] font-bold text-lg">Menu</h1>
+                            <h1 className="font-(family-name:--space-grotesk) font-bold text-lg">Menu</h1>
                         </div>
 
                         <div className="grid grid-cols-4 gap-4">
@@ -53,7 +53,7 @@ export default async function HomeContent() {
                                                 className="text-white w-12 h-12"
                                             />
                                         </div>
-                                        <h1 className="mt-2 font-[family-name:var(--space-grotesk)] font-semibold">{item.label}</h1>
+                                        <h1 className="mt-2 font-(family-name:--space-grotesk) font-semibold">{item.label}</h1>
                                     </div>
                                 </Link>
                             ))}
@@ -65,8 +65,8 @@ export default async function HomeContent() {
                 <div className="w-full max-w-[430px] mx-auto">
                     <div className="mx-4">
                         <div className="flex justify-between mt-6 items-center">
-                            <h1 className="font-[family-name:var(--space-grotesk)] font-bold text-lg">Hasil Pertandingan</h1>
-                            <Link href={"/result"} className="font-[family-name:var(--space-grotesk)] font-medium text-sm text-gray-500">
+                            <h1 className="font-(family-name:--space-grotesk) font-bold text-lg">Hasil Pertandingan</h1>
+                            <Link href={"/result"} className="font-(family-name:--space-grotesk) font-medium text-sm text-gray-500">
                                 Lihat semua
                             </Link>
                         </div>
@@ -237,8 +237,8 @@ export default async function HomeContent() {
                 <div className="w-full max-w-[430px] mx-auto">
                     <div className="mx-4">
                         <div className="flex justify-between mt-8 mb-3 items-center">
-                            <h1 className="font-[family-name:var(--space-grotesk)] font-bold text-lg">Klasemen League</h1>
-                            <Link href={"/ranking"} className="font-[family-name:var(--space-grotesk)] font-medium text-sm text-gray-500">
+                            <h1 className="font-(family-name:--space-grotesk) font-bold text-lg">Klasemen League</h1>
+                            <Link href={"/ranking"} className="font-(family-name:--space-grotesk) font-medium text-sm text-gray-500">
                                 Lihat semua
                             </Link>
                         </div>
@@ -251,7 +251,7 @@ export default async function HomeContent() {
                     {/* Legend Kualifikasi */}
                     <div className="bg-gray-100 mx-4 rounded-md mt-4">
                         <div className="px-3 py-3">
-                            <h1 className="font-[family-name:var(--space-grotesk)] text-base mb-1 font-semibold">Kualifikasi</h1>
+                            <h1 className="font-(family-name:--space-grotesk) text-base mb-1 font-semibold">Kualifikasi</h1>
                             <div className="flex items-center gap-4">
                                 <div className="flex items-center">
                                     <div className="w-4 h-4 bg-blue-500 me-2"></div>
