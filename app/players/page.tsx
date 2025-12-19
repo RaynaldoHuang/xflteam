@@ -49,7 +49,7 @@ export default function PlayersPage() {
 
     return (
         <div className="max-w-[430px] mx-4 pt-24 pb-24 space-y-4">
-            <h1 className="text-lg font-bold mb-2 font-[family-name:var(--space-grotesk)]">Players</h1>
+            <h1 className="text-lg font-bold mb-2 font-(family-name:--space-grotesk)">Players</h1>
 
             {Object.entries(groupedPlayers).map(([teamId, teamPlayers]) => {
                 const team = teamMap[teamId]

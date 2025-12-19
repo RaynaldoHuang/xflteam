@@ -243,8 +243,8 @@ export const players: Player[] = [
   },
 
   {
-    id: "yongsung",
-    name: "Yongsung",
+    id: "yongsun",
+    name: "Yongsun",
     teamId: "naruto",
     position: "CB",
     photo: "",

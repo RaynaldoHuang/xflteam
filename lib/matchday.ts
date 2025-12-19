@@ -145,9 +145,16 @@ export const matches: {
                 { type: "goal", team: "home", player: "Bobby", minute: 20, assist: "Cibex" },
                 { type: "goal", team: "home", player: "Bobby", minute: 25, assist: "Cibex" },
 
+                { type: "yellow", team: "home", player: "Effendy Olif", minute: 36 },
+
                 { type: "goal", team: "away", player: "Titus", minute: 17 },
                 { type: "goal", team: "away", player: "Fico", minute: 23, assist: "Titus" },
                 { type: "goal", team: "away", player: "Fico", minute: 47, assist: "Titus" },
+
+                { type: "yellow", team: "away", player: "Yongsun", minute: 5 },
+                { type: "yellow", team: "away", player: "Suryadi", minute: 44 },
+                { type: "yellow", team: "away", player: "Lim", minute: 42 },
+                
             ] as MatchEvent[],
             competition: "league",
             stage: "group"
@@ -190,6 +197,10 @@ export const matches: {
                 { type: "goal", team: "home", player: "Hendrik", minute: 19},
 
                 { type: "goal", team: "away", player: "Tony", minute: 37, assist: "Riko" },
+
+                { type: "yellow", team: "away", player: "Riko", minute: 29},
+                { type: "yellow", team: "away", player: "Acai", minute: 35},
+                { type: "yellow", team: "away", player: "Tony", minute: 46},
             ] as MatchEvent[],
             competition: "league",
             stage: "group"
