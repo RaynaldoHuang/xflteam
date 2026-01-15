@@ -210,17 +210,25 @@ export const matches: {
         {
             homeTeamId: "pokemon",
             awayTeamId: "onepiece",
-            score: "0",
+            score: "8 : 3",
             week: 1,
             
             date: "2026-01-8",
             time: "20:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "away", player: "ayang", minute: 18, assist: "vj" },
-                // { type: "yellow", team: "away", player: "riko", minute: 46 },
-                // { type: "yellow", team: "away", player: "fico", minute: 44 },
-                // { type: "yellow", team: "home", player: "ferry", minute: 36 },
+                { type: "goal", team: "home", player: "Cibex", minute: 7, assist: "Podiman"},
+                { type: "goal", team: "home", player: "Bram", minute: 16},
+                { type: "goal", team: "home", player: "Bram", minute: 18},
+                { type: "goal", team: "home", player: "Cibex", minute: 23},
+                { type: "goal", team: "home", player: "Cibex", minute: 33, assist: "Podiman"},
+                { type: "goal", team: "home", player: "Cibex", minute: 37},
+                { type: "goal", team: "home", player: "Bram", minute: 38},
+                { type: "goal", team: "home", player: "Podiman", minute: 39},
+
+                { type: "goal", team: "away", player: "Aju", minute: 8, assist: "Awai" },
+                { type: "goal", team: "away", player: "Awai", minute: 21, assist: "Cieks" },
+                { type: "goal", team: "away", player: "Awai", minute: 42, assist: "Cieks" },
             ] as MatchEvent[],
             competition: "cup",
             stage: "group"
@@ -228,18 +236,16 @@ export const matches: {
         {
             homeTeamId: "naruto",
             awayTeamId: "sinchan",
-            score: "0",
+            score: "0 : 2",
             week: 1,
             
             date: "2026-01-8",
             time: "20:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "away", player: "winsen", minute: 4 },
-                // { type: "goal", team: "away", player: "winsen", minute: 33, assist: "fahrun" },
-                // { type: "yellow", team: "away", player: "jono", minute: 24 },
-                // { type: "goal", team: "home", player: "yanssen", minute: 17, assist: "tony" },
-                // { type: "yellow", team: "home", player: "desmond", minute: 16 },
+                { type: "goal", team: "away", player: "Tanado", minute: 44 },
+                { type: "goal", team: "away", player: "Raynaldo", minute: 46, assist: "Tanado" },
+                { type: "yellow", team: "away", player: "Ayang", minute: 34},
             ] as MatchEvent[],
             competition: "cup",
             stage: "group"
@@ -247,18 +253,21 @@ export const matches: {
         {
             homeTeamId: "conan",
             awayTeamId: "digimon",
-            score: "0",
+            score: "3 : 4",
             week: 1,
             
             date: "2026-01-8",
             time: "21:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "away", player: "wewek", minute: 4 },
-                // { type: "goal", team: "away", player: "awai", minute: 20 },
-                // { type: "goal", team: "home", player: "chandri", minute: 24, assist: "raynaldo" },
-                // { type: "goal", team: "home", player: "henry", minute: 36, assist: "daniel" },
-                // { type: "yellow", team: "home", player: "arifin", minute: 32 },
+                { type: "goal", team: "home", player: "Jono", minute: 23, assist: "Mitra"},
+                { type: "goal", team: "home", player: "Effendy", minute: 26, assist: "Mitra"},
+                { type: "goal", team: "home", player: "Jono", minute: 18, assist: "Mitra"},
+
+                { type: "goal", team: "away", player: "Aho", minute: 8, assist: "Tony" },
+                { type: "goal", team: "away", player: "Tony", minute: 19},
+                { type: "goal", team: "away", player: "Tony", minute: 30},
+                { type: "goal", team: "away", player: "Aho", minute: 39},
             ] as MatchEvent[],
             competition: "cup",
             stage: "group"
@@ -266,20 +275,23 @@ export const matches: {
         {
             homeTeamId: "dragonball",
             awayTeamId: "doraemon",
-            score: "0",
+            score: "4 : 3",
             week: 1,
             
             date: "2026-01-8",
             time: "21:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "away", player: "doni", minute: 9 },
-                // { type: "goal", team: "away", player: "nino", minute: 17, assist: "james" },
-                // { type: "goal", team: "home", player: "rbonn", minute: 19 },
-                // { type: "goal", team: "home", player: "acent", minute: 27, assist: "mitra" },
-                // { type: "goal", team: "home", player: "auco", minute: 34, assist: "kelvin" },
-                // { type: "goal", team: "home", player: "vincent (OG)", minute: 44 },
-                // { type: "goal", team: "home", player: "mitra", minute: 48, assist: "auco" },
+                { type: "goal", team: "home", player: "Aguan", minute: 8, assist: "Ryuzi"},
+                { type: "goal", team: "home", player: "Henry", minute: 9},
+                { type: "goal", team: "home", player: "Hendrik", minute: 18, assist: "Aguan"},
+                { type: "goal", team: "home", player: "Reno", minute: 26, assist: "Hendrik"},
+
+                { type: "yellow", team: "home", player: "Aguan", minute: 40},
+
+                { type: "goal", team: "away", player: "Fauzi", minute: 6},
+                { type: "goal", team: "away", player: "Rbonn", minute: 36, assist: "Desmond" },
+                { type: "goal", team: "away", player: "Rbonn", minute: 46, assist: "Desmond" },
             ] as MatchEvent[],
             competition: "cup",
             stage: "group"
