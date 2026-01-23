@@ -126,8 +126,8 @@ export const matches: {
                 { type: "goal", team: "away", player: "Fauzi", minute: 16 },
                 { type: "goal", team: "away", player: "Rbonn", minute: 38, assist: "Desmond" },
 
-                { type: "yellow", team: "away", player: "Rbonn", minute: 33},
-                { type: "yellow", team: "away", player: "Herwin", minute: 20},
+                { type: "yellow", team: "home", player: "Dimas", minute: 33},
+                { type: "yellow", team: "home", player: "Mitra", minute: 20},
             ] as MatchEvent[],
             competition: "league",
             stage: "group"
