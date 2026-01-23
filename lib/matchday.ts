@@ -73,7 +73,7 @@ export const matches: {
                 { type: "yellow", team: "home", player: "Mitra", minute: 42},
 
                 { type: "goal", team: "away", player: "Reno", minute: 10},
-                { type: "goal", team: "away", player: "Aguan", minute: 13, assist: "78" },
+                { type: "goal", team: "away", player: "Aguan", minute: 13, assist: "Ryuzi" },
                 { type: "goal", team: "away", player: "Hendrik", minute: 24},
                 { type: "goal", team: "away", player: "Ryuzi", minute: 29},
             ] as unknown as MatchEvent[],
@@ -124,7 +124,7 @@ export const matches: {
                 { type: "goal", team: "home", player: "Effendy", minute: 23, assist: "Jono" },
 
                 { type: "goal", team: "away", player: "Fauzi", minute: 16 },
-                { type: "goal", team: "away", player: "Rbonn", minute: 38, assist: "desmond" },
+                { type: "goal", team: "away", player: "Rbonn", minute: 38, assist: "Desmond" },
 
                 { type: "yellow", team: "away", player: "Rbonn", minute: 33},
                 { type: "yellow", team: "away", player: "Herwin", minute: 20},
@@ -462,7 +462,7 @@ export const matches: {
 
                 { type: "goal", team: "away", player: "Raynaldo", minute: 3},
                 { type: "goal", team: "away", player: "Raynaldo", minute: 12, assist: "Tanado"},
-                { type: "goal", team: "away", player: "Raynaldo", minute: 21, assist: "Zhong yen"},
+                { type: "goal", team: "away", player: "Raynaldo", minute: 21, assist: "Zhong Yen"},
                 { type: "goal", team: "away", player: "Raynaldo", minute: 27},
                 { type: "goal", team: "away", player: "Zhong Yen", minute: 41, assist: "Raynaldo"},
                 { type: "goal", team: "away", player: "Tanado", minute: 47, assist: "Raynaldo"},
