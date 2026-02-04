@@ -565,7 +565,7 @@ export const matches: {
         //week5
         {
             homeTeamId: "pokemon",
-            awayTeamId: "conan",
+            awayTeamId: "digimon",
             score: "0",
             week: 5,
             
