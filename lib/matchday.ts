@@ -496,17 +496,22 @@ export const matches: {
         {
             homeTeamId: "pokemon",
             awayTeamId: "naruto",
-            score: "0",
+            score: "1 : 2",
             week: 2,
             
             date: "2026-01-29",
             time: "20:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "home", player: "effendi", minute: 6, assist: "podiman" },
-                // { type: "goal", team: "home", player: "bobby", minute: 36 },
-                // { type: "goal", team: "home", player: "swan", minute: 39 },
-                // { type: "goal", team: "home", player: "titus", minute: 42, assist: "bobby" },
+                { type: "goal", team: "away", player: "Fico", minute: 10 },
+                { type: "goal", team: "away", player: "Lim", minute: 37,assist: "Fico" },
+
+                { type: "goal", team: "home", player: "Budju", minute: 26},
+
+                { type: "yellow", team: "home", player: "Herbert", minute: 30},
+                { type: "yellow", team: "home", player: "Chandra", minute: 40},
+
+                { type: "yellow", team: "away", player: "Lim", minute: 26},
             ] as MatchEvent[],
             competition: "cup",
             stage: "group"
@@ -514,17 +519,20 @@ export const matches: {
         {
             homeTeamId: "onepiece",
             awayTeamId: "sinchan",
-            score: "0",
+            score: "3 : 3",
             week: 2,
             
             date: "2026-01-29",
             time: "20:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "away", player: "fauzi", minute: 9, assist: "ayang" },
-                // { type: "goal", team: "away", player: "fauzi", minute: 19 },
-                // { type: "goal", team: "away", player: "manhoi", minute: 39, assist: "fauzi" },
-                // { type: "goal", team: "away", player: "fauzi", minute: 46, assist: "ayang" },
+                { type: "goal", team: "away", player: "Zhongyen", minute: 1 },
+                { type: "goal", team: "away", player: "Zhongyen", minute: 3, assist: "Daniel" },
+                { type: "goal", team: "away", player: "Daniel", minute: 24, assist: "Tanado" },
+
+                { type: "goal", team: "home", player: "Sinaga", minute: 9, assist: "Bobby"},
+                { type: "goal", team: "home", player: "Sinaga", minute: 29, assist: "Bobby"},
+                { type: "goal", team: "home", player: "Bram", minute: 30, assist: "Effendy Olif"},
             ] as MatchEvent[],
             competition: "cup",
             stage: "group"
@@ -532,15 +540,22 @@ export const matches: {
         {
             homeTeamId: "conan",
             awayTeamId: "dragonball",
-            score: "0",
+            score: "2 : 5",
             week: 2,
             
             date: "2026-01-29",
             time: "21:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "home", player: "raynaldo", minute: 22 },
-                // { type: "goal", team: "home", player: "daniel", minute: 42 },
+                { type: "goal", team: "away", player: "Henry", minute: 18 },
+                { type: "goal", team: "away", player: "Hendrik", minute: 20},
+                { type: "goal", team: "away", player: "Aguan", minute: 23},
+                { type: "goal", team: "away", player: "Ryuzi", minute: 28, assist: "Aguan"},
+                { type: "goal", team: "away", player: "Hendrik", minute: 31, assist:"Swan"},
+
+                { type: "yellow", team: "home", player: "Ferry", minute: 29},
+                { type: "goal", team: "home", player: "Jono", minute: 4},
+                { type: "goal", team: "home", player: "Jono", minute: 34, assist:"Mitra"},
             ] as MatchEvent[],
             competition: "cup",
             stage: "group"
@@ -548,15 +563,23 @@ export const matches: {
         {
             homeTeamId: "digimon",
             awayTeamId: "doraemon",
-            score: "0",
+            score: "3 : 6",
             week: 2,
             
             date: "2026-01-29",
             time: "21:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "home", player: "awen", minute: 29, assist: "awai" },
-                // { type: "goal", team: "away", player: "james", minute: 36, assist: "wong" },
+                { type: "goal", team: "home", player: "Acai", minute: 14, assist:"Aho"},
+                { type: "goal", team: "home", player: "Aho", minute: 18, assist:"Tony"},
+                { type: "goal", team: "home", player: "Ringgo", minute: 46, assist:"Tony"},
+
+                { type: "goal", team: "away", player: "Rbonn", minute: 17, assist:"Desmond"},
+                { type: "goal", team: "away", player: "Rbonn", minute: 44, assist:"Desmond"},
+                { type: "goal", team: "away", player: "Rbonn", minute: 37, assist:"Desmond"},
+                { type: "goal", team: "away", player: "Rbonn", minute: 40, assist:"Desmond"},
+                { type: "goal", team: "away", player: "Fauzi", minute: 19, assist:"Desmond"},
+                { type: "goal", team: "away", player: "Desmond", minute: 20},
             ] as MatchEvent[],
             competition: "cup",
             stage: "group"
