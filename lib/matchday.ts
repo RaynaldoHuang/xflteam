@@ -526,8 +526,8 @@ export const matches: {
             time: "20:00",
             venue: "Lapangan C",
             events: [
-                { type: "goal", team: "away", player: "Zhongyen", minute: 1 },
-                { type: "goal", team: "away", player: "Zhongyen", minute: 3, assist: "Daniel" },
+                { type: "goal", team: "away", player: "Zhong Yen", minute: 1 },
+                { type: "goal", team: "away", player: "Zhong Yen", minute: 3, assist: "Daniel" },
                 { type: "goal", team: "away", player: "Daniel", minute: 24, assist: "Tanado" },
 
                 { type: "goal", team: "home", player: "Sinaga", minute: 9, assist: "Bobby"},
