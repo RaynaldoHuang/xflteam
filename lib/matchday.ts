@@ -684,22 +684,26 @@ export const matches: {
         {
             homeTeamId: "onepiece",
             awayTeamId: "doraemon",
-            score: "0",
+            score: "7 : 5",
             week: 6,
             
             date: "2026-02-12",
             time: "20:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "home", player: "fauzi", minute: 48 },
-                // { type: "goal", team: "home", player: "manhoi", minute: 34 },
+                { type: "goal", team: "home", player: "Mando (KP)", minute: 20, assist: "Sinaga" },
+                { type: "goal", team: "home", player: "Bobby", minute: 28, assist: "Cibex" },
+                { type: "goal", team: "home", player: "Bobby", minute: 34, assist: "Sinaga"},
+                { type: "goal", team: "home", player: "Cibex", minute: 38},
+                { type: "goal", team: "home", player: "Mando (KP)", minute: 40,assist: "Sinaga"},
+                { type: "goal", team: "home", player: "Mando (KP)", minute: 43,assist: "Sinaga"},
+                { type: "goal", team: "home", player: "Cibex", minute: 45, assist: "Ferry"},
 
-                // { type: "red", team: "home", player: "stevie", minute: 42 },
-
-                // { type: "goal", team: "away", player: "own goal", minute: 9 },
-                // { type: "goal", team: "away", player: "doni", minute: 21, assist: "nino" },
-                // { type: "yellow", team: "away", player: "wong", minute: 42 },
-                // { type: "yellow", team: "away", player: "nino", minute: 40 },
+                { type: "goal", team: "away", player: "Agung (PK)", minute: 3},
+                { type: "goal", team: "away", player: "Manhoi", minute: 6},
+                { type: "goal", team: "away", player: "Rbonn", minute: 17},
+                { type: "goal", team: "away", player: "Rbonn", minute: 41},
+                { type: "goal", team: "away", player: "Rbonn", minute: 44},
             ] as MatchEvent[],
             competition: "league",
             stage: "group"
@@ -707,18 +711,18 @@ export const matches: {
         {
             homeTeamId: "pokemon",
             awayTeamId: "conan",
-            score: "0",
+            score: "2 : 2",
             week: 6,
             
             date: "2026-02-12",
             time: "20:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "home", player: "effendi", minute: 6, assist: "podiman" },
-                // { type: "goal", team: "home", player: "willy", minute: 20 },
-
-                // { type: "goal", team: "away", player: "henry", minute: 18 },
-                // { type: "yellow", team: "away", player: "budju", minute: 38 },
+                { type: "goal", team: "home", player: "Kelvin", minute: 9},
+                { type: "goal", team: "home", player: "YHM", minute: 10, assist: "Kelvin" },
+            
+                { type: "goal", team: "away", player: "Jono", minute: 34, assist: "Mitra"},
+                { type: "goal", team: "away", player: "Mitra", minute: 44, assist: "Jono"},
             ] as MatchEvent[],
             competition: "league",
             stage: "group"
@@ -726,20 +730,22 @@ export const matches: {
         {
             homeTeamId: "dragonball",
             awayTeamId: "naruto",
-            score: "0",
+            score: "3 : 4",
             week: 6,
             
             date: "2026-02-12",
             time: "21:00",
             venue: "Lapangan B",
             events: [
-                // { type: "goal", team: "away", player: "jono", minute: 26, assist: "winsen" },
-                // { type: "goal", team: "away", player: "cibex", minute: 27, assist: "winsen" },
-                // { type: "goal", team: "away", player: "cibex", minute: 38, assist: "winsen" },
-
-                // { type: "goal", team: "home", player: "rbonn", minute: 5, assist: "dimas" },
-                // { type: "goal", team: "home", player: "acent", minute: 7 },
-                // { type: "goal", team: "home", player: "own goal", minute: 30 },
+                { type: "yellow", team: "home", player: "Marco", minute: 12},
+                { type: "goal", team: "home", player: "Hendrik", minute: 16},
+                { type: "goal", team: "home", player: "Uza", minute: 18},
+                { type: "goal", team: "home", player: "Swan", minute: 41},
+            
+                { type: "goal", team: "away", player: "Titus", minute: 9, assist: "Yanssen"},
+                { type: "goal", team: "away", player: "Fico", minute: 12},
+                { type: "goal", team: "away", player: "Ali Muis", minute: 24, assist: "Suryadi"},
+                { type: "goal", team: "away", player: "Titus", minute: 29, assist: "Bayu"},
             ] as MatchEvent[],
             competition: "league",
             stage: "group"
@@ -747,15 +753,24 @@ export const matches: {
         {
             homeTeamId: "sinchan",
             awayTeamId: "digimon",
-            score: "0",
+            score: "2 : 8",
             week: 6,
             
             date: "2026-02-12",
             time: "21:00",
             venue: "Lapangan C",
             events: [
-                // { type: "goal", team: "away", player: "own goal", minute: 26 },
-                // { type: "goal", team: "home", player: "tony", minute: 47, assist: "desmond" },
+                { type: "goal", team: "home", player: "Ayang", minute: 2, assist: "Will"},
+                { type: "goal", team: "home", player: "Will", minute: 46},
+            
+                { type: "goal", team: "away", player: "Ringgo", minute: 5},
+                { type: "goal", team: "away", player: "Ringgo", minute: 29},
+                { type: "goal", team: "away", player: "Tony", minute: 13},
+                { type: "goal", team: "away", player: "Tony", minute: 43},
+                { type: "goal", team: "away", player: "Ceking (KP)", minute: 20, assist: "Aho"},
+                { type: "goal", team: "away", player: "Tony", minute: 28, assist: "Ringgo"},
+                { type: "goal", team: "away", player: "Aho", minute: 33},
+                { type: "goal", team: "away", player: "Tony", minute: 47, assist: "Aho"},
             ] as MatchEvent[],
             competition: "league",
             stage: "group"
