@@ -20,7 +20,7 @@ export const teams = [
     {
         id: "afsel",
         name: "Afrika Selatan",
-        logo: "/logoteams/Afrika.svg",
+        logo: "/logoteams/afrika.svg",
         group: "A"
     },
     {
