@@ -7,754 +7,91 @@ export type Player = {
 };
 
 export const players: Player[] = [
-  //pokemon
+  //pantai gading
   {
-    id: "awai",
-    name: "Awai",
-    teamId: "pokemon",
+    id: "bangbo",
+    name: "bangbo",
+    teamId: "pantaigading",
     position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "chandra",
-    name: "Chandra",
-    teamId: "pokemon",
-    position: "GK",
-    photo: "",
-  },
-
-  {
-    id: "wewek",
-    name: "Wewek",
-    teamId: "pokemon",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "didi",
-    name: "Didi",
-    teamId: "pokemon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "aju",
-    name: "Aju",
-    teamId: "pokemon",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "kelvin",
-    name: "Kelvin",
-    teamId: "pokemon",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "herbert",
-    name: "Herbert",
-    teamId: "pokemon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "cieks",
-    name: "Cieks",
-    teamId: "pokemon",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "lsq",
-    name: "LSQ",
-    teamId: "pokemon",
-    position: "CM",
-    photo: "",
-  },
-
-  {
-    id: "william",
-    name: "William J",
-    teamId: "pokemon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "budju",
-    name: "Budju",
-    teamId: "pokemon",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "yhm",
-    name: "YHM",
-    teamId: "pokemon",
-    position: "CF",
-    photo: "",
-  },
-
-  //one piece
-  {
-    id: "bobby",
-    name: "Bobby",
-    teamId: "onepiece",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "raymond",
-    name: "Raymond",
-    teamId: "onepiece",
-    position: "GK",
-    photo: "",
-  },
-
-  {
-    id: "awok",
-    name: "Awok",
-    teamId: "onepiece",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "ferry",
-    name: "Ferry",
-    teamId: "onepiece",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "podiman",
-    name: "Podiman",
-    teamId: "onepiece",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "bram",
-    name: "Bram",
-    teamId: "onepiece",
-    position: "WF",
     photo: "",
   },
 
   {
     id: "cibex",
     name: "Cibex",
-    teamId: "onepiece",
-    position: "CF",
+    teamId: "pantaigading",
+    position: "ST",
     photo: "",
   },
 
   {
-    id: "sinaga",
-    name: "Sinaga",
-    teamId: "onepiece",
-    position: "CM",
-    photo: "",
-  },
-
-  {
-    id: "ifan",
-    name: "Ifan",
-    teamId: "onepiece",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "effendy",
-    name: "Effendy Olif",
-    teamId: "onepiece",
+    id: "awok",
+    name: "Awok",
+    teamId: "pantaigading",
     position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "acent",
-    name: "Acent",
-    teamId: "onepiece",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "leo",
-    name: "Leo",
-    teamId: "onepiece",
-    position: "CB",
-    photo: "",
-  },
-
-  //NARUTO
-  {
-    id: "titus",
-    name: "Titus",
-    teamId: "naruto",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "erick",
-    name: "Erick",
-    teamId: "naruto",
-    position: "GK",
-    photo: "",
-  },
-
-  {
-    id: "bayu",
-    name: "Bayu",
-    teamId: "naruto",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "yanssen",
-    name: "Yanssen",
-    teamId: "naruto",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "doni",
-    name: "Doni",
-    teamId: "naruto",
-    position: "CM",
-    photo: "",
-  },
-
-  {
-    id: "yongsun",
-    name: "Yongsun",
-    teamId: "naruto",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "lewis",
-    name: "Lewis",
-    teamId: "naruto",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "lim",
-    name: "Lim",
-    teamId: "naruto",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "faisal",
-    name: "Faisal",
-    teamId: "naruto",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "suryadi",
-    name: "Suryadi",
-    teamId: "naruto",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "fico",
-    name: "Fico",
-    teamId: "naruto",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "alimuis",
-    name: "Ali Muis",
-    teamId: "naruto",
-    position: "CM",
-    photo: "",
-  },
-
-  //SINCHAN
-  {
-    id: "daniel",
-    name: "Daniel",
-    teamId: "sinchan",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "kebo",
-    name: "Kebo",
-    teamId: "sinchan",
-    position: "GK",
-    photo: "",
-  },
-
-  {
-    id: "zhongyen",
-    name: "Zhong Yen",
-    teamId: "sinchan",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "tanado",
-    name: "Tanado",
-    teamId: "sinchan",
-    position: "CM",
-    photo: "",
-  },
-
-  {
-    id: "raynaldo",
-    name: "Raynaldo",
-    teamId: "sinchan",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "awen",
-    name: "Awen",
-    teamId: "sinchan",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "vincent",
-    name: "Vincent",
-    teamId: "sinchan",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "gabriel",
-    name: "Gabriel",
-    teamId: "sinchan",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "ayang",
-    name: "Ayang",
-    teamId: "sinchan",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "wong",
-    name: "Wong",
-    teamId: "sinchan",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "jovan",
-    name: "Jovan",
-    teamId: "sinchan",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "will",
-    name: "Will",
-    teamId: "sinchan",
-    position: "WF",
-    photo: "",
-  },
-
-  //conan
-  {
-    id: "jono",
-    name: "Jono",
-    teamId: "conan",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "ferry",
-    name: "Ferry",
-    teamId: "conan",
-    position: "GK",
-    photo: "",
-  },
-
-  {
-    id: "justin",
-    name: "Justin",
-    teamId: "conan",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "mitra",
-    name: "Mitra",
-    teamId: "conan",
-    position: "CM",
-    photo: "",
-  },
-
-  {
-    id: "effendy",
-    name: "Effendy",
-    teamId: "conan",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "willy",
-    name: "Willy",
-    teamId: "conan",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "acunk",
-    name: "Acunk",
-    teamId: "conan",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "dimas",
-    name: "Dimas",
-    teamId: "conan",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "auco",
-    name: "Auco",
-    teamId: "conan",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "ashia",
-    name: "Ashia",
-    teamId: "conan",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "jl",
-    name: "Johan Lim",
-    teamId: "conan",
-    position: "CM",
-    photo: "",
-  },
-
-  {
-    id: "dodo",
-    name: "Dodo",
-    teamId: "conan",
-    position: "WF",
-    photo: "",
-  },
-
-  //digimon
-  {
-    id: "riko",
-    name: "Riko",
-    teamId: "digimon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "angok",
-    name: "Angok",
-    teamId: "digimon",
-    position: "GK",
-    photo: "",
-  },
-
-  {
-    id: "ringgo",
-    name: "Ringgo",
-    teamId: "digimon",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "ricky",
-    name: "Ricky",
-    teamId: "digimon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "tony",
-    name: "Tony",
-    teamId: "digimon",
-    position: "CM",
-    photo: "",
-  },
-
-  {
-    id: "acai",
-    name: "Acai",
-    teamId: "digimon",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "rabin",
-    name: "Rabin",
-    teamId: "digimon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "bejok",
-    name: "Bejok",
-    teamId: "digimon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "aho",
-    name: "Aho",
-    teamId: "digimon",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "sandy",
-    name: "Sandy",
-    teamId: "digimon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "nickson",
-    name: "Nickson",
-    teamId: "digimon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "rudy",
-    name: "Rudy Podiman",
-    teamId: "digimon",
-    position: "CF",
-    photo: "",
-  },
-
-  //dragonball
-  {
-    id: "ryuzi",
-    name: "Ryuzi",
-    teamId: "dragonball",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "marco",
-    name: "Marco",
-    teamId: "dragonball",
-    position: "GK",
-    photo: "",
-  },
-
-  {
-    id: "henry",
-    name: "Henry",
-    teamId: "dragonball",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "uza",
-    name: "Uza",
-    teamId: "dragonball",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "reno",
-    name: "Reno",
-    teamId: "dragonball",
-    position: "CM",
     photo: "",
   },
 
   {
     id: "hendrik",
     name: "Hendrik",
-    teamId: "dragonball",
+    teamId: "pantaigading",
     position: "CM",
     photo: "",
   },
 
   {
-    id: "hanz",
-    name: "Hanz",
-    teamId: "dragonball",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "swan",
-    name: "Swan",
-    teamId: "dragonball",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "vincentz",
-    name: "Vincent Z",
-    teamId: "dragonball",
+    id: "calvin",
+    name: "Calvin",
+    teamId: "pantaigading",
     position: "CB",
     photo: "",
   },
 
   {
-    id: "asiang",
-    name: "Asiang",
-    teamId: "dragonball",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "gunawan",
-    name: "Gunawan",
-    teamId: "dragonball",
+    id: "williamj",
+    name: "William J",
+    teamId: "pantaigading",
     position: "CB",
     photo: "",
   },
 
   {
-    id: "aguan",
-    name: "Aguan",
-    teamId: "dragonball",
-    position: "CF",
-    photo: "",
-  },
-
-  //doraemon
-  {
-    id: "desmond",
-    name: "Desmond",
-    teamId: "doraemon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "hendrikg",
-    name: "Hendrik G",
-    teamId: "doraemon",
-    position: "GK",
+    id: "feri",
+    name: "Feri",
+    teamId: "pantaigading",
+    position: "CM",
     photo: "",
   },
 
   {
     id: "agustian",
     name: "Agustian",
-    teamId: "doraemon",
-    position: "CF",
+    teamId: "pantaigading",
+    position: "ST",
     photo: "",
   },
 
   {
-    id: "fauzi",
-    name: "Fauzi",
-    teamId: "doraemon",
+    id: "arifin",
+    name: "Arifin",
+    teamId: "pantaigading",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "agung",
+    name: "Agung",
+    teamId: "pantaigading",
     position: "CM",
     photo: "",
   },
 
   {
-    id: "gil",
-    name: "Gil",
-    teamId: "doraemon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "rbon",
-    name: "Rbonn",
-    teamId: "doraemon",
-    position: "CF",
-    photo: "",
-  },
-
-  {
-    id: "bangbo",
-    name: "Bangbo",
-    teamId: "doraemon",
-    position: "CB",
-    photo: "",
-  },
-
-  {
-    id: "herwin",
-    name: "Herwin",
-    teamId: "doraemon",
-    position: "WF",
-    photo: "",
-  },
-
-  {
-    id: "wendy",
-    name: "Wendy",
-    teamId: "doraemon",
+    id: "hansen",
+    name: "Hansen",
+    teamId: "pantaigading",
     position: "CB",
     photo: "",
   },
@@ -762,24 +99,727 @@ export const players: Player[] = [
   {
     id: "manhoi",
     name: "Manhoi",
-    teamId: "doraemon",
-    position: "CF",
+    teamId: "pantaigading",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "kebo",
+    name: "Kebo",
+    teamId: "pantaigading",
+    position: "GK",
+    photo: "",
+  },
+
+  //uzbekistan
+  {
+    id: "kingzy",
+    name: "Kingzy",
+    teamId: "uzbekistan",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "hanpeng",
+    name: "Hanpeng",
+    teamId: "uzbekistan",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "hsimon",
+    name: "H Simon",
+    teamId: "uzbekistan",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "gerald",
+    name: "Gerald",
+    teamId: "uzbekistan",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "darent",
+    name: "Darent",
+    teamId: "uzbekistan",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "benben",
+    name: "Benben",
+    teamId: "uzbekistan",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "wisnu",
+    name: "Wisnu",
+    teamId: "uzbekistan",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "jervis",
+    name: "Jervis",
+    teamId: "uzbekistan",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "ceking",
+    name: "Ceking",
+    teamId: "uzbekistan",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "yanssen",
+    name: "Yanssen",
+    teamId: "uzbekistan",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "fendy",
+    name: "Fendy",
+    teamId: "uzbekistan",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "eddy",
+    name: "Eddy",
+    teamId: "uzbekistan",
+    position: "GK",
+    photo: "",
+  },
+
+  //norway
+  {
+    id: "kevin",
+    name: "Kevin LCS",
+    teamId: "norway",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "yongsun",
+    name: "Yongsun",
+    teamId: "norway",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "zhongyen",
+    name: "Zhong Yen",
+    teamId: "norway",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "ayang",
+    name: "Ayang",
+    teamId: "norway",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "doni",
+    name: "Doni",
+    teamId: "norway",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "dimas",
+    name: "Dimas",
+    teamId: "norway",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "jony",
+    name: "Jony",
+    teamId: "norway",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "awen",
+    name: "Awen",
+    teamId: "norway",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "yhm",
+    name: "YHM",
+    teamId: "norway",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "agust",
+    name: "Agust",
+    teamId: "norway",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "cieks",
+    name: "Cieks",
+    teamId: "norway",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "deni",
+    name: "Deni",
+    teamId: "norway",
+    position: "GK",
+    photo: "",
+  },
+
+  //Afsel
+  {
+    id: "stevie",
+    name: "Stevie",
+    teamId: "afsel",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "jono",
+    name: "Jono",
+    teamId: "afsel",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "podiman",
+    name: "Podiman",
+    teamId: "afsel",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "santo",
+    name: "Santo",
+    teamId: "afsel",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "ricky",
+    name: "Ricky",
+    teamId: "afsel",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "nino",
+    name: "Nino",
+    teamId: "afsel",
+    position: "WF",
     photo: "",
   },
 
   {
     id: "verry",
     name: "Verry",
-    teamId: "doraemon",
+    teamId: "afsel",
     position: "CB",
     photo: "",
   },
 
   {
-    id: "alvin",
-    name: "Alvin",
-    teamId: "doraemon",
+    id: "salja",
+    name: "Salja",
+    teamId: "afsel",
     position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "cipta",
+    name: "Cipta",
+    teamId: "afsel",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "aju",
+    name: "Aju",
+    teamId: "afsel",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "johanes",
+    name: "Johanes",
+    teamId: "afsel",
+    position: "CM",
+    photo: ""
+  },
+
+  {
+    id: "au",
+    name: "Au",
+    teamId: "afsel",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "chandra",
+    name: "Chandra",
+    teamId: "afsel",
+    position: "GK",
+    photo: "",
+  },
+
+  //skotlandia
+  {
+    id: "ashia",
+    name: "Ashia",
+    teamId: "skotlandia",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "ryuzi",
+    name: "Ryuzi",
+    teamId: "skotlandia",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "bejo",
+    name: "Bejo",
+    teamId: "skotlandia",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "rabin",
+    name: "Rabin",
+    teamId: "skotlandia",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "awai",
+    name: "Awai",
+    teamId: "skotlandia",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "lsq",
+    name: "LSQ",
+    teamId: "skotlandia",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "sonni",
+    name: "Sonni",
+    teamId: "skotlandia",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "fauzi",
+    name: "Fauzi",
+    teamId: "skotlandia",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "effendy",
+    name: "Effendy",
+    teamId: "skotlandia",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "acai",
+    name: "Acai",
+    teamId: "skotlandia",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "winsenjr",
+    name: "Winsen Jr",
+    teamId: "skotlandia",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "will",
+    name: "Will",
+    teamId: "skotlandia",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "vincent",
+    name: "Vincent",
+    teamId: "skotlandia",
+    position: "GK",
+    photo: "",
+  },
+
+  //paraguay
+  {
+    id: "guicisin",
+    name: "Guicisin",
+    teamId: "paraguay",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "jeo",
+    name: "Jeo",
+    teamId: "paraguay",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "tanado",
+    name: "Tanado",
+    teamId: "paraguay",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "wendy",
+    name: "Wendy",
+    teamId: "paraguay",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "davis",
+    name: "Davis",
+    teamId: "paraguay",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "rbon",
+    name: "Rbon",
+    teamId: "paraguay",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "daniel",
+    name: "Daniel",
+    teamId: "paraguay",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "riko",
+    name: "Riko",
+    teamId: "paraguay",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "sandy",
+    name: "Sandy",
+    teamId: "paraguay",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "bayu",
+    name: "Bayu",
+    teamId: "paraguay",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "donald",
+    name: "Donald",
+    teamId: "paraguay",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "dustin",
+    name: "Dustin",
+    teamId: "paraguay",
+    position: "GK",
+    photo: "",
+  },
+
+  //QATAR
+  {
+    id: "willy",
+    name: "Willy",
+    teamId: "qatar",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "jansen",
+    name: "Jansen",
+    teamId: "qatar",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "bobby",
+    name: "Bobby",
+    teamId: "qatar",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "devian",
+    name: "Devian",
+    teamId: "qatar",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "cunk",
+    name: "Cunk",
+    teamId: "qatar",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "praja",
+    name: "Praja",
+    teamId: "qatar",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "jl",
+    name: "JL",
+    teamId: "qatar",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "tony",
+    name: "Tony",
+    teamId: "qatar",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "faisal",
+    name: "Faisal",
+    teamId: "qatar",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "budju",
+    name: "Budju",
+    teamId: "qatar",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "aho",
+    name: "Aho",
+    teamId: "qatar",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "alun",
+    name: "Alu",
+    teamId: "qatar",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "mitra",
+    name: "Mitra",
+    teamId: "qatar",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "kevin",
+    name: "Kevin",
+    teamId: "qatar",
+    position: "GK",
+    photo: "",
+  },
+
+  //ARABSAUDI
+  {
+    id: "gil",
+    name: "Gil",
+    teamId: "arabsaudi",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "henry",
+    name: "Henry",
+    teamId: "arabsaudi",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "erik",
+    name: "Erik",
+    teamId: "arabsaudi",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "fico",
+    name: "Fico",
+    teamId: "arabsaudi",
+    position: "WF",
+    photo: "",
+  },
+
+  {
+    id: "desmond",
+    name: "Desmond",
+    teamId: "arabsaudi",
+    position: "CM",
+    photo: "",
+  },
+
+  {
+    id: "suryadi",
+    name: "Suryadi",
+    teamId: "arabsaudi",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "alimuis",
+    name: "Ali muis",
+    teamId: "arabsaudi",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "iman",
+    name: "Iman",
+    teamId: "arabsaudi",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "gunawan",
+    name: "Gunawan",
+    teamId: "arabsaudi",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "titus",
+    name: "Titus",
+    teamId: "arabsaudi",
+    position: "ST",
+    photo: "",
+  },
+
+  {
+    id: "ferry",
+    name: "Ferry",
+    teamId: "arabsaudi",
+    position: "CB",
+    photo: "",
+  },
+
+  {
+    id: "jefry",
+    name: "Jefry",
+    teamId: "arabsaudi",
+    position: "GK",
     photo: "",
   },
 ];

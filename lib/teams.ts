@@ -1,50 +1,50 @@
 export const teams = [
     {
-        id: "pokemon",
-        name: "Pokemon",
-        logo: "/logoteams/pokemon.webp",
+        id: "pantaigading",
+        name: "Pantai Gading",
+        logo: "/logoteams/pantaigading.svg",
         group: "A"
     },
     {
-        id: "onepiece",
-        name: "One Piece",
-        logo: "/logoteams/onepiece.webp",
+        id: "uzbekistan",
+        name: "Uzbekistan",
+        logo: "/logoteams/uzbek.svg",
         group: "A"
     },
     {
-        id: "naruto",
-        name: "Naruto",
-        logo: "/logoteams/uzumaki.webp",
+        id: "norway",
+        name: "Norwegia",
+        logo: "/logoteams/norway.svg",
         group: "A"
     },
     {
-        id: "sinchan",
-        name: "Sinchan",
-        logo: "/logoteams/sinchan.webp",
+        id: "afsel",
+        name: "Afrika Selatan",
+        logo: "/logoteams/Afrika.svg",
         group: "A"
     },
     {
-        id: "conan",
-        name: "Conan",
-        logo: "/logoteams/conan.webp",
+        id: "skotlandia",
+        name: "Skotlandia",
+        logo: "/logoteams/skotlandia.svg",
         group: "B"
     },
     {
-        id: "digimon",
-        name: "Digimon",
-        logo: "/logoteams/digimon.webp",
+        id: "paraguay",
+        name: "Paraguay",
+        logo: "/logoteams/paraguya.svg",
         group: "B"
     },
     {
-        id: "dragonball",
-        name: "Dragon Ball",
-        logo: "/logoteams/dragonball.webp",
+        id: "qatar",
+        name: "Qatar",
+        logo: "/logoteams/qatar.svg",
         group: "B"
     },
     {
-        id: "doraemon",
-        name: "Doraemon",
-        logo: "/logoteams/doraemon.webp",
+        id: "arabsaudi",
+        name: "Arab Saudi",
+        logo: "/logoteams/arab.svg",
         group: "B"
     },
     // Tambah tim lain di sini...
