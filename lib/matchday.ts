@@ -17,28 +17,40 @@ export const matches: {
   {
     homeTeamId: "pantaigading",
     awayTeamId: "norway",
-    score: "0",
+    score: "2 : 2",
     week: 1,
     date: "2026-04-23",
     time: "20:00",
     venue: "Lapangan B",
     events: [
-      // { type: "goal", team: "home", player: "Suryadi", minute: 19 },
-      // { type: "goal", team: "home", player: "Titus", minute: 34 },
-      // {
-      //   type: "goal",
-      //   team: "home",
-      //   player: "Lewis",
-      //   minute: 40,
-      //   assist: "Titus",
-      // },
-      // {
-      //   type: "goal",
-      //   team: "home",
-      //   player: "Doni",
-      //   minute: 43,
-      //   assist: "Titus",
-      // },
+      {
+        type: "goal",
+        team: "home",
+        player: "Calvin",
+        minute: 2,
+        assist: "Agung",
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "William J",
+        minute: 13,
+        assist: "Hendrik",
+      },
+
+      {
+        type: "goal",
+        team: "away",
+        player: "YHM",
+        minute: 11,
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "YHM",
+        minute: 29,
+        assist: "Doni",
+      },
     ] as unknown as MatchEvent[],
     competition: "league",
     stage: "group",
@@ -46,38 +58,89 @@ export const matches: {
   {
     homeTeamId: "paraguay",
     awayTeamId: "arabsaudi",
-    score: "0",
+    score: "4 : 7",
     week: 1,
 
     date: "2026-04-23",
     time: "20:00",
     venue: "Lapangan C",
     events: [
-      // { type: "goal", team: "home", player: "Ringgo", minute: 2 },
-      // {
-      //   type: "goal",
-      //   team: "home",
-      //   player: "Ringgo",
-      //   minute: 22,
-      //   assist: "Acai",
-      // },
-      // {
-      //   type: "goal",
-      //   team: "home",
-      //   player: "Tony",
-      //   minute: 24,
-      //   assist: "Acai",
-      // },
-      // { type: "yellow", team: "home", player: "Nickson", minute: 31 },
-      // { type: "yellow", team: "home", player: "Riko", minute: 40 },
+      {
+        type: "goal",
+        team: "home",
+        player: "Sandy",
+        minute: 29,
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Tanado",
+        minute: 30,
+      },
 
-      // {
-      //   type: "goal",
-      //   team: "away",
-      //   player: "Rbonn",
-      //   minute: 10,
-      //   assist: "Desmond",
-      // },
+      {
+        type: "goal",
+        team: "home",
+        player: "Rbon",
+        minute: 36,
+        assist: "Riko",
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Wendy",
+        minute: 39,
+        assist: "Rbon",
+      },
+
+      {
+        type: "goal",
+        team: "away",
+        player: "Henry",
+        minute: 19,
+        assist: "Ferry",
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Ali muis",
+        minute: 21,
+        assist: "Desmond",
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Gil",
+        minute: 24,
+        assist: "Ferry",
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Titus",
+        minute: 25,
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Titus",
+        minute: 33,
+        assist: "Iman",
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Henry",
+        minute: 45,
+        assist: "Titus",
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Gil",
+        minute: 47,
+        assist: "Titus",
+      },
     ] as unknown as MatchEvent[],
     competition: "league",
     stage: "group",
@@ -85,42 +148,39 @@ export const matches: {
   {
     homeTeamId: "skotlandia",
     awayTeamId: "qatar",
-    score: "0",
+    score: "3 : 1",
     week: 1,
 
     date: "2026-04-23",
     time: "21:00",
     venue: "Lapangan B",
     events: [
-      // {
-      //   type: "goal",
-      //   team: "home",
-      //   player: "Jono",
-      //   minute: 18,
-      //   assist: "Mitra",
-      // },
-      // { type: "goal", team: "home", player: "Effendy", minute: 27 },
-      // { type: "goal", team: "home", player: "Mitra", minute: 30 },
-      // {
-      //   type: "goal",
-      //   team: "home",
-      //   player: "Acunk",
-      //   minute: 36,
-      //   assist: "Jono",
-      // },
-      // { type: "goal", team: "home", player: "Jono", minute: 42 },
-      // { type: "yellow", team: "home", player: "Mitra", minute: 42 },
-
-      // { type: "goal", team: "away", player: "Reno", minute: 10 },
-      // {
-      //   type: "goal",
-      //   team: "away",
-      //   player: "Aguan",
-      //   minute: 13,
-      //   assist: "Ryuzi",
-      // },
-      // { type: "goal", team: "away", player: "Hendrik", minute: 24 },
-      // { type: "goal", team: "away", player: "Ryuzi", minute: 29 },
+      {
+        type: "goal",
+        team: "home",
+        player: "Awai",
+        minute: 3,
+        assist: "Will",
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Awai",
+        minute: 33,
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Awai",
+        minute: 35,
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Budju",
+        minute: 32,
+        assist: "Devian",
+      },
     ] as unknown as MatchEvent[],
     competition: "league",
     stage: "group",
@@ -129,14 +189,52 @@ export const matches: {
   {
     homeTeamId: "uzbekistan",
     awayTeamId: "afsel",
-    score: "0",
+    score: "5 : 1",
     week: 1,
 
     date: "2026-04-23",
     time: "21:00",
     venue: "Lapangan C",
     events: [
-      
+      {
+        type: "goal",
+        team: "home",
+        player: "Ceking",
+        minute: 11,
+        assist: "Darent",
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Jervis",
+        minute: 16,
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Ceking",
+        minute: 36,
+        assist: "H Simon",
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "H Simon",
+        minute: 42,
+        assist: "Jervis",
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "H Simon",
+        minute: 44,
+        assist: "Ceking",
+      },{
+        type: "goal",
+        team: "away",
+        player: "Podiman",
+        minute: 8,
+      },
     ] as unknown as MatchEvent[],
     competition: "league",
     stage: "group",
@@ -151,9 +249,7 @@ export const matches: {
     date: "2026-04-30",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -167,9 +263,7 @@ export const matches: {
     date: "2026-04-30",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -183,9 +277,7 @@ export const matches: {
     date: "2026-04-30",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -199,9 +291,7 @@ export const matches: {
     date: "2026-04-30",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -216,9 +306,7 @@ export const matches: {
     date: "2026-05-7",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -232,9 +320,7 @@ export const matches: {
     date: "2026-05-7",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -248,9 +334,7 @@ export const matches: {
     date: "2026-05-7",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -264,9 +348,7 @@ export const matches: {
     date: "2026-05-7",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -281,9 +363,7 @@ export const matches: {
     date: "2026-05-21",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -297,9 +377,7 @@ export const matches: {
     date: "2026-05-21",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -313,9 +391,7 @@ export const matches: {
     date: "2026-05-21",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -329,9 +405,7 @@ export const matches: {
     date: "2026-05-21",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -346,9 +420,7 @@ export const matches: {
     date: "2026-06-4",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -361,9 +433,7 @@ export const matches: {
     date: "2026-06-4",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -376,9 +446,7 @@ export const matches: {
     date: "2026-06-4",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -392,9 +460,7 @@ export const matches: {
     date: "2026-06-4",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -409,9 +475,7 @@ export const matches: {
     date: "2026-06-11",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -425,9 +489,7 @@ export const matches: {
     date: "2026-06-11",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -441,9 +503,7 @@ export const matches: {
     date: "2026-06-11",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -457,9 +517,7 @@ export const matches: {
     date: "2026-06-11",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -474,9 +532,7 @@ export const matches: {
     date: "2026-06-18",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -490,9 +546,7 @@ export const matches: {
     date: "2026-06-18",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -506,9 +560,7 @@ export const matches: {
     date: "2026-06-18",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -522,9 +574,7 @@ export const matches: {
     date: "2026-06-18",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -539,9 +589,7 @@ export const matches: {
     date: "2026-06-25",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -555,9 +603,7 @@ export const matches: {
     date: "2026-06-25",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -571,13 +617,11 @@ export const matches: {
     date: "2026-06-25",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
-  
+
   {
     homeTeamId: "afsel",
     awayTeamId: "paraguay",
@@ -587,9 +631,7 @@ export const matches: {
     date: "2026-06-25",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -604,9 +646,7 @@ export const matches: {
     date: "2026-07-02",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -620,9 +660,7 @@ export const matches: {
     date: "2026-07-02",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -636,9 +674,7 @@ export const matches: {
     date: "2026-07-02",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -652,9 +688,7 @@ export const matches: {
     date: "2026-07-02",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -669,9 +703,7 @@ export const matches: {
     date: "2026-07-09",
     time: "20:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -685,9 +717,7 @@ export const matches: {
     date: "2026-07-09",
     time: "20:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -701,9 +731,7 @@ export const matches: {
     date: "2026-07-09",
     time: "21:00",
     venue: "Lapangan B",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },
@@ -716,9 +744,7 @@ export const matches: {
     date: "2026-07-09",
     time: "21:00",
     venue: "Lapangan C",
-    events: [
-      
-    ] as MatchEvent[],
+    events: [] as MatchEvent[],
     competition: "league",
     stage: "group",
   },

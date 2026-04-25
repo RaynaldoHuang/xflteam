@@ -14,7 +14,7 @@ export const teams = [
     {
         id: "norway",
         name: "Norwegia",
-        logo: "/logoteams/norway.svg",
+        logo: "/logoteams/norway.webp",
         group: "A"
     },
     {
