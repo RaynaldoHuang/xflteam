@@ -484,13 +484,61 @@ export const matches: {
   {
     homeTeamId: "pantaigading",
     awayTeamId: "uzbekistan",
-    score: "0",
+    score: "3 : 3",
     week: 1,
 
     date: "2026-05-7",
     time: "20:00",
     venue: "Lapangan B",
-    events: [] as MatchEvent[],
+    events: [
+      {
+        type: "goal",
+        team: "home",
+        player: "Calvin",
+        minute: 4,
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Calvin",
+        minute: 9,
+        assist : "Manhoi"
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Agung",
+        minute: 46,
+      },
+      {
+        type: "yellow",
+        team: "home",
+        player: "Cibex",
+        minute: 30,
+      },
+
+      {
+        type: "goal",
+        team: "away",
+        player: "Ceking",
+        minute: 2,
+        assist : "Jervis"
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Ceking",
+        minute: 11,
+        assist : "Jervis"
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Ceking",
+        minute: 40,
+        assist : "Hanpeng"
+      },
+    ] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -498,13 +546,47 @@ export const matches: {
   {
     homeTeamId: "norway",
     awayTeamId: "afsel",
-    score: "0",
+    score: "3 : 1",
     week: 1,
-
     date: "2026-05-7",
     time: "20:00",
     venue: "Lapangan C",
-    events: [] as MatchEvent[],
+    events: [
+      {
+        type: "goal",
+        team: "home",
+        player: "YHM",
+        minute: 12,
+        assist : "Dimas"
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Ayang",
+        minute: 23,
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "YHM",
+        minute: 34,
+        assist : "Awen"
+      },
+      {
+        type: "yellow",
+        team: "home",
+        player: "Awen",
+        minute: 32,
+      },
+
+      {
+        type: "goal",
+        team: "away",
+        player: "Jono",
+        minute: 27,
+        assist : "Podiman"
+      },
+    ] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -512,13 +594,69 @@ export const matches: {
   {
     homeTeamId: "skotlandia",
     awayTeamId: "paraguay",
-    score: "0",
+    score: "5 : 3",
     week: 1,
 
     date: "2026-05-7",
     time: "21:00",
     venue: "Lapangan B",
-    events: [] as MatchEvent[],
+    events: [
+      {
+        type: "goal",
+        team: "home",
+        player: "Awai",
+        minute: 8,
+        assist : "Ryuzi"
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Ryuzi",
+        minute: 18,
+        assist : "Awai"
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Fauzi",
+        minute: 29,
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Winsen Jr",
+        minute: 45,
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Fauzi",
+        minute: 47,
+        assist : "Awai"
+      },
+
+      {
+        type: "goal",
+        team: "away",
+        player: "Riko",
+        minute: 1,
+        assist : "Bayu"
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Jeo",
+        minute: 23,
+        assist : "Rbon"
+      },
+      {
+        type: "goal",
+        team: "away",
+        player: "Rbon",
+        minute: 28,
+        assist : "Tanado"
+      },
+    ] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
@@ -526,13 +664,34 @@ export const matches: {
   {
     homeTeamId: "qatar",
     awayTeamId: "arabsaudi",
-    score: "0",
+    score: "2 : 1",
     week: 1,
-
     date: "2026-05-7",
     time: "21:00",
     venue: "Lapangan C",
-    events: [] as MatchEvent[],
+    events: [
+      {
+        type: "goal",
+        team: "home",
+        player: "JL",
+        minute: 24,
+        assist : "Mitra"
+      },
+      {
+        type: "goal",
+        team: "home",
+        player: "Tony",
+        minute: 31,
+      },
+
+      {
+        type: "goal",
+        team: "away",
+        player: "Iman",
+        minute: 7,
+        assist: "Titus"
+      },
+    ] as MatchEvent[],
     competition: "cup",
     stage: "group",
   },
